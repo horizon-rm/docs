@@ -6,6 +6,3 @@
 [2](https://blog.csdn.net/m0_63203517/article/details/145482770)
 [3](https://squidfunk.github.io/mkdocs-material/getting-started/#primary-colors)
 [4](https://mkdoc-material.llango.com/reference/content-tabs/)
-
-
-
