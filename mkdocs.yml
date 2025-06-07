@@ -1,7 +1,110 @@
 site_name: Horizon 战队电控组博客
 theme: 
   name: material
+  features:
+    - annotations.dismiss # 公告
+    # - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.integrate
+  icon:
+    repo: fontawesome/brands/git-alt
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+ 
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
 
+extra:
+  social: 
+    - icon: fontawesome/brands/github
+      link: https://github.com/horizon-rm/
+      name: horizon 战队
+  disqus: <shortname>
+
+copyright: Copyright &copy; 2017-2025 Horizon战队
+
+# 顶部github链接
+repo_url: https://github.com/horizon-rm/docs
+repo_name: horizon-rm/docs
+
+markdown_extensions: #详见https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/ 和 https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/
+  - abbr
+  - attr_list
+  - admonition
+  - def_list
+  - footnotes
+  - md_in_html
+  # - meta # 支持Markdown文件上方自定义标题标签等
+  - pymdownx.caret
+  - pymdownx.betterem
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.snippets
+  - pymdownx.smartsymbols
+  - pymdownx.tilde
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format:
+            !!python/name:pymdownx.superfences.fence_code_format # 代码块高亮插件
+  - pymdownx.arithmatex: # latex支持
+      generic: true
+  - toc:
+      permalink: true # 固定标题位置为当前位置
+  - pymdownx.highlight: # 代码块高亮
+      anchor_linenums: true
+      linenums: true # 显示行号
+      # auto_title: true # 显示编程语言名称
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+# 支持latex
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+
+plugins:
+  - git-revision-date-localized:
+      type: datetime #时间类型
+      custom_format: "%Y-%m-%d"  # 时间格式
+      timezone: Asia/Shanghai #时区
+      locale: en #首选语言
+      fallback_to_build_date: true #许回退到git 不可用时mkdocs build执行的时间
+      enable_creation_date: true #是否启用创建时间
+      exclude:  #排除的页面
+          - index.md
+      enabled: true #是否启用
+      strict: true
+
+      
 nav:
   - 主页: index.md
   - 环境:

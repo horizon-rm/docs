@@ -1,6 +1,5 @@
 # 华北理工大学 Horizon RoboMaster 战队
 
-![Horizon战队Logo](assets/images/horizon_logo.png)
 
 ## 欢迎访问我们的官方博客
 
@@ -8,9 +7,14 @@ Horizon 战队是华北理工大学的 RoboMaster 机器人战队，由机械、
 
 ## 最新动态
 
-- [2025年5月] 🏆 队伍顺利通过2025赛季 RoboMaster 全国赛区域赛，晋级全国总决赛！
-- [2025年4月] 🔧 完成新一代机器人底盘驱动系统优化，提升机动性能20%
-- [2025年3月] 🚀 成功举办校内机器人技术分享会，展示最新研发成果
+- [2025年5月] 🏆 队伍顺利通过2025赛季 RoboMaster 全国赛区域赛
+- [2025年4月] 🔧 完成新一代机器人底盘驱动系统优化，提升机动性能
+- [2024年12月] 🚀 成功举办校内赛
+- [2024年5月] 🏆 队伍顺利通过2024赛季 RoboMaster 全国赛区域赛，全国三等奖
+- [2023年5月] 🏆 队伍顺利通过2023赛季 RoboMaster 全国赛区域赛
+，全国三等奖
+- [2019年5月] 🏆 队伍顺利通过2023赛季 RoboMaster 全国赛区域赛
+，全国十六强
 
 ## 战队组别
 
@@ -41,5 +45,9 @@ Horizon 战队是华北理工大学的 RoboMaster 机器人战队，由机械、
         </svg>
     </a>
 </div>
+
+
+开发基于 [mkdocs material](https://mkdoc-material.llango.com/reference/admonitions/)
+
 
 [关于我们](./about.md) | [技术博客](./blog/index.md) | [赛事记录](./competitions.md)

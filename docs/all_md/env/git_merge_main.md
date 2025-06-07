@@ -11,80 +11,52 @@
 * **操作说明**：在 GitHub/GitLab 等平台上，已经完成了 Pull Request 的创建和合并操作
 * **实际影响**：远程的 main 分支已更新，但本地代码尚未同步这些更改
 
+!!! danger "重要"
+    注意你的merge方向，应为`main-><your_branch>`
 
 ### 2. 检查当前分支
 
-```bash
-git branch
-```
+=== "Bash"
+
+    ```bash
+    git branch
+    ```
 
 * **命令解释**：显示本地所有分支，当前分支前会有 `*` 标记
 * **目的**：确认我们当前位于哪个分支，确保后续操作在正确的分支上进行
 
-### 3. 尝试更新本地代码
+!!! note "注意"
+    这里输出的名称是你当前所在分支的名称，后面的 `<current_branch_name> ` 均应替换为你当前所在分支的名称，即上个命令的输出。
 
-```bash
-git pull
-```
+### 3. 暂存已修改代码
 
-* **命令解释**：从远程仓库拉取当前分支的最新代码并自动合并
-* **等同于**：`git fetch` + `git merge origin/<current_branch>`
+=== "Bash"
+  ```bash
+  git add .
+  git commit -m "local changes update before merging from main "
+  ```
 
-或者更明确地指定分支：
+!!! tips 
+    也可以通过vscode暂存，你若觉得代码没有问题的话，也可以提交。建议养成及时提交的习惯。
 
-```bash
-git pull origin <current_branch_name>
-```
+### 4. 尝试更新本地代码
+
+=== "Bash"
+  ```bash
+  git pull origin <current_branch_name>
+  ```
 
 ![本地终端](./git_merge_main_png/1.png)
 
 * **命令解释**：从远程仓库的指定分支拉取最新代码并合并到当前分支
-* **问题**：这两个命令在当前场景中有重复操作，通常只需使用第一条命令即可
 
-### 4. VSCode Git 扫描当前工作区，尝试提交代码出现报错
 
-* **问题描述**：VSCode Git 界面显示错误信息
-* **可能原因**：
-  - 本地有未提交的更改，与远程更新产生冲突
-  - 本地和远程分支已经分叉（diverged）
-
+### 5. VSCode Git 扫描当前工作区，开始解决冲突
 
 ![本地终端](./git_merge_main_png/4.png)
 
-> 下面 5 可以不看，他是一个提交过程中的一次报错。
 
-### 5. 尝试推送本地更改
-
-```bash
-git push
-```
-
-* **命令解释**：推送当前分支的更改到远程仓库
-* **报错原因**：本地分支没有跟踪远程分支或已经落后于远程分支
-
-尝试设置上游分支：
-
-```bash
-git push --set-upstream origin <current_branch_name>
-```
-
-* **命令解释**：将本地分支推送到远程并设置跟踪关系
-* **报错信息**：`because the tip of your current branch is behind its remote counterpart.`
-* **错误原因**：本地分支版本落后于远程分支，无法直接推送
-
-### 6. 再次尝试拉取远程更新
-
-```bash
-git pull origin <current_branch_name>
-```
-
-
-![本地终端](./git_merge_main_png/6.png)
-
-* **命令解释**：强制从指定远程分支拉取并合并到本地
-* **结果**：由于本地有修改且远程也有更新，进入合并冲突解决模式
-
-### 7. 处理合并冲突
+### 6. 处理合并冲突
 
 * **VSCode 界面操作**：
   - 打开有冲突的文件，会看到类似如下标记的冲突区域：
@@ -111,7 +83,9 @@ git pull origin <current_branch_name>
 ![本地终端](./git_merge_main_png/8.png)
 
 
-### 8. 处理特殊文件冲突
+### 7. 处理特殊文件冲突
+
+> 有概率出现下面情况，若未出现则跳过此步骤。
 
 * **特殊情况**：Keil MDK 项目文件（*.uvprojx）等二进制或特殊格式文件冲突
 * **解决方法**：
@@ -119,19 +93,26 @@ git pull origin <current_branch_name>
   - 方法2：在合并冲突时专门为这些文件选择"保留上次更改"
   - 方法3：通过命令行指定使用某一版本：
 
-```bash
-git checkout --ours -- path/to/file.uvprojx   # 保留自己的版本
-git checkout --theirs -- path/to/file.uvprojx  # 使用远程版本
-```
+=== "Bash"
+  ```bash
+  git checkout --ours -- path/to/file.uvprojx   # 保留自己的版本
+  git checkout --theirs -- path/to/file.uvprojx  # 使用远程版本
+  ```
 
 ![本地终端](./git_merge_main_png/9.png)
 
 
-### 9. 完成合并
+### 8. 完成合并
 
 所有冲突解决后：
 
-编译完成，检查无误后提交即可。 下面暂时不要看，还未测试。
+编译完成，检查无误后提交即可。
+
+!!! success 
+    提交的代码一定要本地编译没有报错再进行提交。最后检查以下远程仓库上你的分支上是否有最新提交的代码记录。
+
+!!! warning "注意"
+    下面暂时不要看，还未测试。
 
 
 ```bash
