@@ -26,6 +26,9 @@
     
       <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
       
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
       
 
 
@@ -53,7 +56,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -76,7 +86,7 @@
 
   
 
-<header class="md-header md-header--shadow" data-md-component="header">
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../../.." title="Horizon 战队电控组博客" class="md-header__button md-logo" aria-label="Horizon 战队电控组博客" data-md-component="logo">
       
@@ -105,61 +115,174 @@
       </div>
     </div>
     
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
-      
-      
-        <label class="md-header__button md-icon" for="__search">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        </label>
-        <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-        </button>
-      </nav>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-      
     
+      <div class="md-header__source">
+        <a href="https://github.com/horizon-rm/docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    horizon-rm/docs
+  </div>
+</a>
+      </div>
     
   </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  主页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../install/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  环境
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../algorithm/kinematic/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  算法层次
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../other/docker/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  其他
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../about/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
   
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
-        
-          
         
       
       <main class="md-main" data-md-component="main">
@@ -173,8 +296,12 @@
                     
 
 
+  
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../../.." title="Horizon 战队电控组博客" class="md-nav__button md-logo" aria-label="Horizon 战队电控组博客" data-md-component="logo">
       
@@ -184,6 +311,18 @@
     </a>
     Horizon 战队电控组博客
   </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/horizon-rm/docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    horizon-rm/docs
+  </div>
+</a>
+    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -219,17 +358,33 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -305,17 +460,33 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
             
   
   
@@ -488,9 +659,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#9" class="md-nav__link">
+  <a href="#8" class="md-nav__link">
     <span class="md-ellipsis">
-      9. 完成合并
+      8. 完成合并
     </span>
   </a>
   
@@ -584,7 +755,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#8" class="md-nav__link">
+  <a href="#8_1" class="md-nav__link">
     <span class="md-ellipsis">
       8. 推送更改到远程
     </span>
@@ -712,14 +883,27 @@
   
     
     
+      
+        
+      
+        
+      
     
+    
+    
+      
+      
+        
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -749,7 +933,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../algorithm/kinematic.md" class="md-nav__link">
+      <a href="../../algorithm/kinematic/" class="md-nav__link">
         
   
   
@@ -773,14 +957,29 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
     
+    
+    
+      
+      
+        
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -810,7 +1009,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../algorithm/kalman.md" class="md-nav__link">
+      <a href="../../algorithm/kalman/" class="md-nav__link">
         
   
   
@@ -833,7 +1032,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../algorithm/complementary.md" class="md-nav__link">
+      <a href="../../algorithm/complementary/" class="md-nav__link">
         
   
   
@@ -856,7 +1055,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../algorithm/lowpass.md" class="md-nav__link">
+      <a href="../../algorithm/lowpass/" class="md-nav__link">
         
   
   
@@ -895,14 +1094,25 @@
   
     
     
+      
+        
+      
     
+    
+    
+      
+      
+        
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -984,275 +1194,6 @@
               </div>
             
             
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      方案一：常见流程及问题解决
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="方案一：常见流程及问题解决">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-pr-merge" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. 远程仓库上创建 PR 请求，merge 完成
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. 检查当前分支
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. 暂存已修改代码
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. 尝试更新本地代码
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-vscode-git" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. VSCode Git 扫描当前工作区，开始解决冲突
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. 处理合并冲突
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. 处理特殊文件冲突
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#9" class="md-nav__link">
-    <span class="md-ellipsis">
-      9. 完成合并
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      优化建议
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      方案二：最优化合并流程（下面不要看，还未测试）
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="方案二：最优化合并流程（下面不要看，还未测试）">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. 确保本地工作已保存
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. 确认并切换到目标分支
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. 拉取远程最新状态
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-main" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. 合并 main 分支更新
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. 解决可能的合并冲突
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. 标记冲突已解决
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. 完成合并
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#8" class="md-nav__link">
-    <span class="md-ellipsis">
-      8. 推送更改到远程
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#9-stash" class="md-nav__link">
-    <span class="md-ellipsis">
-      9. 恢复之前暂存的工作（如果使用了 stash）
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      特殊文件处理建议
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="特殊文件处理建议">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#gitignore" class="md-nav__link">
-    <span class="md-ellipsis">
-      配置 .gitignore 忽略编译生成文件
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      为特殊文件设置合并策略
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      在冲突时手动选择特定版本
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      总结
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           
             <div class="md-content" data-md-component="content">
@@ -1261,47 +1202,83 @@
                   
 
 
+  
+  
 
-<h1 id="git-main">Git 教程：将 main 分支更新合并到本地</h1>
+
+<h1 id="git-main">Git 教程：将 main 分支更新合并到本地<a class="headerlink" href="#git-main" title="Permanent link">&para;</a></h1>
 <p>本教程将介绍如何通过 Git 将 main 分支上的更新合并到本地工作分支中。我们提供两套方案：一套是基于常见工作流程及遇到问题的详细解决方案，另一套是最优化的操作步骤。</p>
-<h2 id="_1">方案一：常见流程及问题解决</h2>
+<h2 id="_1">方案一：常见流程及问题解决<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p>以下是一个实际工作中遇到的流程，包括可能出现的问题及解决方法：</p>
-<h3 id="1-pr-merge">1. 远程仓库上创建 PR 请求，merge 完成</h3>
+<h3 id="1-pr-merge">1. 远程仓库上创建 PR 请求，merge 完成<a class="headerlink" href="#1-pr-merge" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>操作说明</strong>：在 GitHub/GitLab 等平台上，已经完成了 Pull Request 的创建和合并操作</li>
 <li><strong>实际影响</strong>：远程的 main 分支已更新，但本地代码尚未同步这些更改</li>
 </ul>
-<h3 id="2">2. 检查当前分支</h3>
-<pre><code class="language-bash">git branch
-</code></pre>
+<div class="admonition danger">
+<p class="admonition-title">重要</p>
+<p>注意你的merge方向，应为<code>main-&gt;&lt;your_branch&gt;</code></p>
+</div>
+<h3 id="2">2. 检查当前分支<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Bash</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>git<span class="w"> </span>branch
+</code></pre></div></td></tr></table></div>
+</div>
+</div>
+</div>
 <ul>
 <li><strong>命令解释</strong>：显示本地所有分支，当前分支前会有 <code>*</code> 标记</li>
 <li><strong>目的</strong>：确认我们当前位于哪个分支，确保后续操作在正确的分支上进行</li>
 </ul>
-<h3 id="3">3. 暂存已修改代码</h3>
-<pre><code>git add .
-git commit -m &quot;local changes update before merging from main &quot;
-</code></pre>
-<h3 id="4">4. 尝试更新本地代码</h3>
-<pre><code class="language-bash">git pull origin &lt;current_branch_name&gt;
-</code></pre>
+<div class="admonition note">
+<p class="admonition-title">注意</p>
+<p>这里输出的名称是你当前所在分支的名称，后面的 <code>&lt;current_branch_name&gt;</code> 均应替换为你当前所在分支的名称，即上个命令的输出。</p>
+</div>
+<h3 id="3">3. 暂存已修改代码<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Bash</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
+</div>
+</div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>git<span class="w"> </span>add<span class="w"> </span>.
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;local changes update before merging from main &quot;</span>
+</code></pre></div></td></tr></table></div>
+<div class="admonition tips">
+<p class="admonition-title">Tips</p>
+<p>也可以通过vscode暂存，你若觉得代码没有问题的话，也可以提交。建议养成及时提交的习惯。</p>
+</div>
+<h3 id="4">4. 尝试更新本地代码<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Bash</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
+</div>
+</div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>git<span class="w"> </span>pull<span class="w"> </span>origin<span class="w"> </span>&lt;current_branch_name&gt;
+</code></pre></div></td></tr></table></div>
 <p><img alt="本地终端" src="../git_merge_main_png/1.png" /></p>
 <ul>
 <li><strong>命令解释</strong>：从远程仓库的指定分支拉取最新代码并合并到当前分支</li>
 </ul>
-<h3 id="5-vscode-git">5. VSCode Git 扫描当前工作区，开始解决冲突</h3>
+<h3 id="5-vscode-git">5. VSCode Git 扫描当前工作区，开始解决冲突<a class="headerlink" href="#5-vscode-git" title="Permanent link">&para;</a></h3>
 <p><img alt="本地终端" src="../git_merge_main_png/4.png" /></p>
-<h3 id="6">6. 处理合并冲突</h3>
+<h3 id="6">6. 处理合并冲突<a class="headerlink" href="#6" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>VSCode 界面操作</strong>：</li>
 <li>打开有冲突的文件，会看到类似如下标记的冲突区域：</li>
 </ul>
-<pre><code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-本地代码
-=======
-远程代码
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; origin/branch_name
-</code></pre>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span>
+<span class="normal"><a href="#__codelineno-3-3">3</a></span>
+<span class="normal"><a href="#__codelineno-3-4">4</a></span>
+<span class="normal"><a href="#__codelineno-3-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a>本地代码
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a>=======
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a>远程代码
+<a id="__codelineno-3-5" name="__codelineno-3-5"></a>&gt;&gt;&gt;&gt;&gt;&gt;&gt; origin/branch_name
+</code></pre></div></td></tr></table></div>
 <ul>
 <li>对每个冲突选择：<ul>
 <li><strong>采用当前更改</strong>：保留本地修改</li>
@@ -1320,7 +1297,7 @@ git commit -m &quot;local changes update before merging from main &quot;
 <li>所有冲突解决完毕后，需要完成合并提交</li>
 </ul>
 <p><img alt="本地终端" src="../git_merge_main_png/8.png" /></p>
-<h3 id="7">7. 处理特殊文件冲突</h3>
+<h3 id="7">7. 处理特殊文件冲突<a class="headerlink" href="#7" title="Permanent link">&para;</a></h3>
 <blockquote>
 <p>有概率出现下面情况，若未出现则跳过此步骤。</p>
 </blockquote>
@@ -1331,113 +1308,133 @@ git commit -m &quot;local changes update before merging from main &quot;
 <li>方法2：在合并冲突时专门为这些文件选择"保留上次更改"</li>
 <li>方法3：通过命令行指定使用某一版本：</li>
 </ul>
-<pre><code class="language-bash">git checkout --ours -- path/to/file.uvprojx   # 保留自己的版本
-git checkout --theirs -- path/to/file.uvprojx  # 使用远程版本
-</code></pre>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:1"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Bash</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
+</div>
+</div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>git<span class="w"> </span>checkout<span class="w"> </span>--ours<span class="w"> </span>--<span class="w"> </span>path/to/file.uvprojx<span class="w">   </span><span class="c1"># 保留自己的版本</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a>git<span class="w"> </span>checkout<span class="w"> </span>--theirs<span class="w"> </span>--<span class="w"> </span>path/to/file.uvprojx<span class="w">  </span><span class="c1"># 使用远程版本</span>
+</code></pre></div></td></tr></table></div>
 <p><img alt="本地终端" src="../git_merge_main_png/9.png" /></p>
-<h3 id="9">9. 完成合并</h3>
+<h3 id="8">8. 完成合并<a class="headerlink" href="#8" title="Permanent link">&para;</a></h3>
 <p>所有冲突解决后：</p>
 <p>编译完成，检查无误后提交即可。</p>
-<p><em>下面暂时不要看，还未测试。</em></p>
-<p><em>下面暂时不要看，还未测试。</em></p>
-<p><em>下面暂时不要看，还未测试。</em></p>
-<pre><code class="language-bash">git add .
-git commit -m &quot;合并 main 分支更新&quot;
-git push
-</code></pre>
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p>提交的代码一定要本地编译没有报错再进行提交。最后检查以下远程仓库上你的分支上是否有最新提交的代码记录。</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">注意</p>
+<p>下面暂时不要看，还未测试。</p>
+</div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
+<span class="normal"><a href="#__codelineno-5-2">2</a></span>
+<span class="normal"><a href="#__codelineno-5-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>git<span class="w"> </span>add<span class="w"> </span>.
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;合并 main 分支更新&quot;</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3"></a>git<span class="w"> </span>push
+</code></pre></div></td></tr></table></div>
 <ul>
 <li><strong>命令解释</strong>：</li>
 <li><code>git add .</code> - 暂存所有更改，包括解决的冲突</li>
 <li><code>git commit -m "..."</code> - 创建合并提交</li>
 <li><code>git push</code> - 推送合并后的代码到远程仓库</li>
 </ul>
-<h3 id="_2">优化建议</h3>
+<h3 id="_2">优化建议<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
 <ol>
 <li><strong>在拉取远程更新前，先提交或暂存本地更改</strong>：
-   <code>bash
-   git add .                       # 暂存所有更改
-   git commit -m "本地修改的描述"  # 提交本地更改</code></li>
+   <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
+<span class="normal"><a href="#__codelineno-6-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a>git<span class="w"> </span>add<span class="w"> </span>.<span class="w">                       </span><span class="c1"># 暂存所有更改</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;本地修改的描述&quot;</span><span class="w">  </span><span class="c1"># 提交本地更改</span>
+</code></pre></div></td></tr></table></div></li>
 <li>
 <p><strong>说明</strong>：确保本地工作被保存，避免在合并时丢失</p>
 </li>
 <li>
-<p><strong>使用 stash 暂时保存本地未提交的更改</strong>：</p>
+<p><strong>使用 stash 暂时保存本地未提交的更改</strong>：
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
+<span class="normal"><a href="#__codelineno-7-2">2</a></span>
+<span class="normal"><a href="#__codelineno-7-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a>git<span class="w"> </span>stash<span class="w">                </span><span class="c1"># 暂存当前更改</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2"></a>git<span class="w"> </span>pull<span class="w">                 </span><span class="c1"># 拉取远程更新</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3"></a>git<span class="w"> </span>stash<span class="w"> </span>pop<span class="w">            </span><span class="c1"># 恢复之前的更改（可能需要解决冲突）</span>
+</code></pre></div></td></tr></table></div></p>
 </li>
-</ol>
-<pre><code class="language-bash">git stash                # 暂存当前更改
-git pull                 # 拉取远程更新
-git stash pop            # 恢复之前的更改（可能需要解决冲突）
-</code></pre>
-<ul>
 <li>
 <p><strong>说明</strong>：适用于不想立即提交但又需要先更新代码的情况</p>
 </li>
 <li>
-<p><strong>为特殊文件设置 .gitattributes</strong>：</p>
+<p><strong>为特殊文件设置 .gitattributes</strong>：
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
+<span class="normal"><a href="#__codelineno-8-2">2</a></span>
+<span class="normal"><a href="#__codelineno-8-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a>*.uvprojx merge=binary  # 将特定文件视为二进制文件处理
+<a id="__codelineno-8-2" name="__codelineno-8-2"></a># 或
+<a id="__codelineno-8-3" name="__codelineno-8-3"></a>*.uvprojx merge=ours    # 合并时自动保留自己的版本
+</code></pre></div></td></tr></table></div></p>
 </li>
-</ul>
-<pre><code>*.uvprojx merge=binary  # 将特定文件视为二进制文件处理
-# 或
-*.uvprojx merge=ours    # 合并时自动保留自己的版本
-</code></pre>
-<ul>
 <li><strong>说明</strong>：避免每次都要手动处理特殊文件冲突</li>
-</ul>
-<h2 id="_3">方案二：最优化合并流程（下面不要看，还未测试）</h2>
+</ol>
+<h2 id="_3">方案二：最优化合并流程（下面不要看，还未测试）<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>下面是拉取 main 分支更新到本地工作分支的最优流程：</p>
-<h3 id="1">1. 确保本地工作已保存</h3>
-<pre><code class="language-bash">git status
-</code></pre>
+<h3 id="1">1. 确保本地工作已保存<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a>git<span class="w"> </span>status
+</code></pre></div></td></tr></table></div>
 <ul>
 <li><strong>命令解释</strong>：显示工作区状态，包括已修改但未提交的文件</li>
 <li><strong>目的</strong>：了解当前修改情况，决定如何处理这些更改</li>
 </ul>
 <p>如有未提交的更改，可以选择提交或暂存：</p>
-<pre><code class="language-bash"># 提交更改
-git add .                       # 暂存所有更改
-git commit -m &quot;本地修改描述&quot;    # 提交更改
-
-# 或者暂时保存更改
-git stash save &quot;进行中的工作&quot;   # 保存当前更改并添加描述
-</code></pre>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span>
+<span class="normal"><a href="#__codelineno-10-2">2</a></span>
+<span class="normal"><a href="#__codelineno-10-3">3</a></span>
+<span class="normal"><a href="#__codelineno-10-4">4</a></span>
+<span class="normal"><a href="#__codelineno-10-5">5</a></span>
+<span class="normal"><a href="#__codelineno-10-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="c1"># 提交更改</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2"></a>git<span class="w"> </span>add<span class="w"> </span>.<span class="w">                       </span><span class="c1"># 暂存所有更改</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;本地修改描述&quot;</span><span class="w">    </span><span class="c1"># 提交更改</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4"></a>
+<a id="__codelineno-10-5" name="__codelineno-10-5"></a><span class="c1"># 或者暂时保存更改</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6"></a>git<span class="w"> </span>stash<span class="w"> </span>save<span class="w"> </span><span class="s2">&quot;进行中的工作&quot;</span><span class="w">   </span><span class="c1"># 保存当前更改并添加描述</span>
+</code></pre></div></td></tr></table></div>
 <ul>
 <li><strong>命令解释</strong>：</li>
 <li><code>git add .</code> - 将所有修改添加到暂存区</li>
 <li><code>git commit</code> - 创建一个新的提交，记录当前项目状态</li>
 <li><code>git stash save</code> - 临时保存修改，不创建提交</li>
 </ul>
-<h3 id="2_1">2. 确认并切换到目标分支</h3>
-<pre><code class="language-bash">git branch                  # 查看所有本地分支
-git checkout &lt;branch_name&gt;  # 切换到需要更新的分支
-</code></pre>
+<h3 id="2_1">2. 确认并切换到目标分支<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span>
+<span class="normal"><a href="#__codelineno-11-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a>git<span class="w"> </span>branch<span class="w">                  </span><span class="c1"># 查看所有本地分支</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2"></a>git<span class="w"> </span>checkout<span class="w"> </span>&lt;branch_name&gt;<span class="w">  </span><span class="c1"># 切换到需要更新的分支</span>
+</code></pre></div></td></tr></table></div>
 <ul>
 <li><strong>命令解释</strong>：</li>
 <li><code>git branch</code> - 列出所有本地分支，当前分支有 <code>*</code> 标记</li>
 <li><code>git checkout</code> - 切换到指定分支</li>
 </ul>
-<h3 id="3_1">3. 拉取远程最新状态</h3>
-<pre><code class="language-bash">git fetch --all
-</code></pre>
+<h3 id="3_1">3. 拉取远程最新状态<a class="headerlink" href="#3_1" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1"></a>git<span class="w"> </span>fetch<span class="w"> </span>--all
+</code></pre></div></td></tr></table></div>
 <ul>
 <li><strong>命令解释</strong>：从远程仓库获取所有分支的最新状态，但不合并任何更改</li>
 <li><strong>目的</strong>：了解远程仓库的最新状态，为后续操作做准备</li>
 </ul>
-<h3 id="4-main">4. 合并 main 分支更新</h3>
-<pre><code class="language-bash">git merge origin/main
-</code></pre>
+<h3 id="4-main">4. 合并 main 分支更新<a class="headerlink" href="#4-main" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1"></a>git<span class="w"> </span>merge<span class="w"> </span>origin/main
+</code></pre></div></td></tr></table></div>
 <ul>
 <li><strong>命令解释</strong>：将远程 main 分支的更改合并到当前分支</li>
 <li><strong>可能结果</strong>：</li>
 <li>自动合并成功：Git 自动处理所有更改</li>
 <li>发生冲突：需要手动解决冲突</li>
 </ul>
-<h3 id="5">5. 解决可能的合并冲突</h3>
+<h3 id="5">5. 解决可能的合并冲突<a class="headerlink" href="#5" title="Permanent link">&para;</a></h3>
 <p>如果出现冲突，需要手动解决：</p>
 <ul>
 <li>
 <p><strong>命令行查看冲突文件</strong>：
-  <code>bash
-  git status  # 查看哪些文件有冲突</code></p>
+  <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1"></a>git<span class="w"> </span>status<span class="w">  </span><span class="c1"># 查看哪些文件有冲突</span>
+</code></pre></div></td></tr></table></div></p>
 </li>
 <li>
 <p><strong>手动编辑冲突文件</strong>：</p>
@@ -1454,95 +1451,132 @@ git checkout &lt;branch_name&gt;  # 切换到需要更新的分支
 <li>点击 "Accept Current Change"/"Accept Incoming Change"/"Accept Both Changes"</li>
 <li>保存文件</li>
 </ul>
-<h3 id="6_1">6. 标记冲突已解决</h3>
-<pre><code class="language-bash">git add &lt;conflicted_file&gt;  # 标记单个文件冲突已解决
-# 或
-git add .                  # 标记所有冲突已解决
-</code></pre>
+<h3 id="6_1">6. 标记冲突已解决<a class="headerlink" href="#6_1" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-1">1</a></span>
+<span class="normal"><a href="#__codelineno-15-2">2</a></span>
+<span class="normal"><a href="#__codelineno-15-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1"></a>git<span class="w"> </span>add<span class="w"> </span>&lt;conflicted_file&gt;<span class="w">  </span><span class="c1"># 标记单个文件冲突已解决</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2"></a><span class="c1"># 或</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3"></a>git<span class="w"> </span>add<span class="w"> </span>.<span class="w">                  </span><span class="c1"># 标记所有冲突已解决</span>
+</code></pre></div></td></tr></table></div>
 <ul>
 <li><strong>命令解释</strong>：将修改后的文件添加到暂存区，表示冲突已解决</li>
 </ul>
-<h3 id="7_1">7. 完成合并</h3>
-<pre><code class="language-bash">git commit                 # 如果是合并操作，会自动生成合并信息
-# 或自定义提交信息
-git commit -m &quot;合并 main 分支的更新&quot;
-</code></pre>
+<h3 id="7_1">7. 完成合并<a class="headerlink" href="#7_1" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-16-1">1</a></span>
+<span class="normal"><a href="#__codelineno-16-2">2</a></span>
+<span class="normal"><a href="#__codelineno-16-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1"></a>git<span class="w"> </span>commit<span class="w">                 </span><span class="c1"># 如果是合并操作，会自动生成合并信息</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2"></a><span class="c1"># 或自定义提交信息</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;合并 main 分支的更新&quot;</span>
+</code></pre></div></td></tr></table></div>
 <ul>
 <li><strong>命令解释</strong>：创建一个合并提交，完成分支合并过程</li>
 </ul>
-<h3 id="8">8. 推送更改到远程</h3>
-<pre><code class="language-bash">git push
-</code></pre>
+<h3 id="8_1">8. 推送更改到远程<a class="headerlink" href="#8_1" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-17-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1"></a>git<span class="w"> </span>push
+</code></pre></div></td></tr></table></div>
 <ul>
 <li><strong>命令解释</strong>：将本地更改推送到远程仓库</li>
 <li><strong>注意</strong>：如果本地分支没有设置跟踪关系，可能需要：
-  <code>bash
-  git push --set-upstream origin &lt;branch_name&gt;</code></li>
+  <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-18-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1"></a>git<span class="w"> </span>push<span class="w"> </span>--set-upstream<span class="w"> </span>origin<span class="w"> </span>&lt;branch_name&gt;
+</code></pre></div></td></tr></table></div></li>
 </ul>
-<h3 id="9-stash">9. 恢复之前暂存的工作（如果使用了 stash）</h3>
-<pre><code class="language-bash">git stash list             # 查看所有暂存的工作
-git stash pop              # 恢复最近一次暂存的工作
-# 或
-git stash apply stash@{n}  # 恢复特定的暂存工作但不删除 stash
-</code></pre>
+<h3 id="9-stash">9. 恢复之前暂存的工作（如果使用了 stash）<a class="headerlink" href="#9-stash" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-19-1">1</a></span>
+<span class="normal"><a href="#__codelineno-19-2">2</a></span>
+<span class="normal"><a href="#__codelineno-19-3">3</a></span>
+<span class="normal"><a href="#__codelineno-19-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1"></a>git<span class="w"> </span>stash<span class="w"> </span>list<span class="w">             </span><span class="c1"># 查看所有暂存的工作</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2"></a>git<span class="w"> </span>stash<span class="w"> </span>pop<span class="w">              </span><span class="c1"># 恢复最近一次暂存的工作</span>
+<a id="__codelineno-19-3" name="__codelineno-19-3"></a><span class="c1"># 或</span>
+<a id="__codelineno-19-4" name="__codelineno-19-4"></a>git<span class="w"> </span>stash<span class="w"> </span>apply<span class="w"> </span>stash@<span class="o">{</span>n<span class="o">}</span><span class="w">  </span><span class="c1"># 恢复特定的暂存工作但不删除 stash</span>
+</code></pre></div></td></tr></table></div>
 <ul>
 <li><strong>命令解释</strong>：</li>
 <li><code>git stash list</code> - 查看所有保存的工作进度</li>
 <li><code>git stash pop</code> - 恢复最新保存的工作并从 stash 列表中删除</li>
 <li><code>git stash apply</code> - 恢复指定的工作但保留在 stash 列表中</li>
 </ul>
-<h2 id="_4">特殊文件处理建议</h2>
-<h3 id="gitignore">配置 .gitignore 忽略编译生成文件</h3>
+<h2 id="_4">特殊文件处理建议<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="gitignore">配置 .gitignore 忽略编译生成文件<a class="headerlink" href="#gitignore" title="Permanent link">&para;</a></h3>
 <p>在项目根目录创建或编辑 <code>.gitignore</code> 文件，添加以下内容：</p>
-<pre><code># 编译生成文件
-*.o
-*.d
-*.axf
-*.hex
-*.bin
-*.lst
-*.map
-*.bak
-*.dep
-*.lnp
-*.iex
-*.htm
-*.build_log.htm
-*.lnk
-
-# IDE生成的临时文件
-.vscode/
-*.uvguix.*
-*.scvd
-JLinkLog.txt
-*.dbgconf
-</code></pre>
-<h3 id="_5">为特殊文件设置合并策略</h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-20-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-20-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-20-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-20-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-20-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-20-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-20-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-20-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-20-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-20-10">10</a></span>
+<span class="normal"><a href="#__codelineno-20-11">11</a></span>
+<span class="normal"><a href="#__codelineno-20-12">12</a></span>
+<span class="normal"><a href="#__codelineno-20-13">13</a></span>
+<span class="normal"><a href="#__codelineno-20-14">14</a></span>
+<span class="normal"><a href="#__codelineno-20-15">15</a></span>
+<span class="normal"><a href="#__codelineno-20-16">16</a></span>
+<span class="normal"><a href="#__codelineno-20-17">17</a></span>
+<span class="normal"><a href="#__codelineno-20-18">18</a></span>
+<span class="normal"><a href="#__codelineno-20-19">19</a></span>
+<span class="normal"><a href="#__codelineno-20-20">20</a></span>
+<span class="normal"><a href="#__codelineno-20-21">21</a></span>
+<span class="normal"><a href="#__codelineno-20-22">22</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1"></a># 编译生成文件
+<a id="__codelineno-20-2" name="__codelineno-20-2"></a>*.o
+<a id="__codelineno-20-3" name="__codelineno-20-3"></a>*.d
+<a id="__codelineno-20-4" name="__codelineno-20-4"></a>*.axf
+<a id="__codelineno-20-5" name="__codelineno-20-5"></a>*.hex
+<a id="__codelineno-20-6" name="__codelineno-20-6"></a>*.bin
+<a id="__codelineno-20-7" name="__codelineno-20-7"></a>*.lst
+<a id="__codelineno-20-8" name="__codelineno-20-8"></a>*.map
+<a id="__codelineno-20-9" name="__codelineno-20-9"></a>*.bak
+<a id="__codelineno-20-10" name="__codelineno-20-10"></a>*.dep
+<a id="__codelineno-20-11" name="__codelineno-20-11"></a>*.lnp
+<a id="__codelineno-20-12" name="__codelineno-20-12"></a>*.iex
+<a id="__codelineno-20-13" name="__codelineno-20-13"></a>*.htm
+<a id="__codelineno-20-14" name="__codelineno-20-14"></a>*.build_log.htm
+<a id="__codelineno-20-15" name="__codelineno-20-15"></a>*.lnk
+<a id="__codelineno-20-16" name="__codelineno-20-16"></a>
+<a id="__codelineno-20-17" name="__codelineno-20-17"></a># IDE生成的临时文件
+<a id="__codelineno-20-18" name="__codelineno-20-18"></a>.vscode/
+<a id="__codelineno-20-19" name="__codelineno-20-19"></a>*.uvguix.*
+<a id="__codelineno-20-20" name="__codelineno-20-20"></a>*.scvd
+<a id="__codelineno-20-21" name="__codelineno-20-21"></a>JLinkLog.txt
+<a id="__codelineno-20-22" name="__codelineno-20-22"></a>*.dbgconf
+</code></pre></div></td></tr></table></div>
+<h3 id="_5">为特殊文件设置合并策略<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <p>在项目根目录创建或编辑 <code>.gitattributes</code> 文件：</p>
-<pre><code># Keil项目文件使用自己的版本
-*.uvprojx merge=ours
-*.uvoptx merge=ours
-
-# 或者将其视为二进制文件
-# *.uvprojx binary
-</code></pre>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-21-1">1</a></span>
+<span class="normal"><a href="#__codelineno-21-2">2</a></span>
+<span class="normal"><a href="#__codelineno-21-3">3</a></span>
+<span class="normal"><a href="#__codelineno-21-4">4</a></span>
+<span class="normal"><a href="#__codelineno-21-5">5</a></span>
+<span class="normal"><a href="#__codelineno-21-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1"></a># Keil项目文件使用自己的版本
+<a id="__codelineno-21-2" name="__codelineno-21-2"></a>*.uvprojx merge=ours
+<a id="__codelineno-21-3" name="__codelineno-21-3"></a>*.uvoptx merge=ours
+<a id="__codelineno-21-4" name="__codelineno-21-4"></a>
+<a id="__codelineno-21-5" name="__codelineno-21-5"></a># 或者将其视为二进制文件
+<a id="__codelineno-21-6" name="__codelineno-21-6"></a># *.uvprojx binary
+</code></pre></div></td></tr></table></div>
 <ul>
 <li><strong>说明</strong>：这会在自动合并时使用指定的策略，减少冲突处理</li>
 </ul>
-<h3 id="_6">在冲突时手动选择特定版本</h3>
+<h3 id="_6">在冲突时手动选择特定版本<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
 <p>如果已经出现冲突，可以通过命令行强制选择某个版本：</p>
-<pre><code class="language-bash"># 保留自己的版本
-git checkout --ours -- path/to/file.uvprojx
-
-# 使用远程仓库的版本
-git checkout --theirs -- path/to/file.uvprojx
-</code></pre>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-22-1">1</a></span>
+<span class="normal"><a href="#__codelineno-22-2">2</a></span>
+<span class="normal"><a href="#__codelineno-22-3">3</a></span>
+<span class="normal"><a href="#__codelineno-22-4">4</a></span>
+<span class="normal"><a href="#__codelineno-22-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1"></a><span class="c1"># 保留自己的版本</span>
+<a id="__codelineno-22-2" name="__codelineno-22-2"></a>git<span class="w"> </span>checkout<span class="w"> </span>--ours<span class="w"> </span>--<span class="w"> </span>path/to/file.uvprojx
+<a id="__codelineno-22-3" name="__codelineno-22-3"></a>
+<a id="__codelineno-22-4" name="__codelineno-22-4"></a><span class="c1"># 使用远程仓库的版本</span>
+<a id="__codelineno-22-5" name="__codelineno-22-5"></a>git<span class="w"> </span>checkout<span class="w"> </span>--theirs<span class="w"> </span>--<span class="w"> </span>path/to/file.uvprojx
+</code></pre></div></td></tr></table></div>
 <ul>
 <li><strong>命令解释</strong>：</li>
 <li><code>--ours</code> - 选择当前分支（你的工作分支）的版本</li>
 <li><code>--theirs</code> - 选择要合并的分支（main 分支）的版本</li>
 </ul>
-<h2 id="_7">总结</h2>
+<h2 id="_7">总结<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
 <p><strong>正确的工作流程核心步骤</strong>：</p>
 <ol>
 <li>
@@ -1572,6 +1606,38 @@ git checkout --theirs -- path/to/file.uvprojx
 
 
 
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="June 7, 2025 19:41:07 CST">June 7, 2025 19:41:07</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Created">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="June 7, 2025 19:41:07 CST">June 7, 2025 19:41:07</span>
+  </span>
+
+    
+    
+    
+  </aside>
 
 
 
@@ -1585,18 +1651,80 @@ git checkout --theirs -- path/to/file.uvprojx
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
       </main>
       
         <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../git_commit/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 提交">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                提交
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../git_pr_fix/" class="md-footer__link md-footer__link--next" aria-label="Next: pr修正">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                pr修正
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
   
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2017-2025 Horizon战队
+    </div>
+  
   
     Made with
     <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
       Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/horizon-rm/" target="_blank" rel="noopener" title="horizon 战队" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
     </a>
   
 </div>
@@ -1613,10 +1741,16 @@ git checkout --theirs -- path/to/file.uvprojx
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["annotations.dismiss", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.indexes", "navigation.top", "navigation.footer", "search.highlight", "search.share", "search.suggest", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="../../../javascripts/config.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>
