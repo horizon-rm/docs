@@ -1,0 +1,22 @@
+site_name: Horizon 战队电控组博客
+theme: 
+  name: material
+
+nav:
+  - 主页: index.md
+  - 环境:
+      - 安装: all_md/env/install.md
+      - 配置: all_md/env/config.md
+      - git:
+        - 提交: all_md/env/git_commit.md
+        - 合并main分支: all_md/env/git_merge_main.md
+        - pr修正: all_md/env/git_pr_fix.md
+  - 算法层次:
+      - 底盘运动学解算: all_md/algorithm/kinematic.md
+      - 常见滤波器:
+        - 卡尔曼滤波: all_md/algorithm/kalman.md
+        - 互补滤波: all_md/algorithm/complementary.md
+        - 低通滤波: all_md/algorithm/lowpass.md
+  - 其他:
+    - docker安装配置: all_md/other/docker.md
+  - About: about.md
