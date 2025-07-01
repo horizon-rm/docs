@@ -71,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -140,6 +145,53 @@
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
     
     
       <div class="md-header__source">
@@ -514,6 +566,21 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    提交
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -526,6 +593,382 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#git" class="md-nav__link">
+    <span class="md-ellipsis">
+      Git工作流实战
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Git工作流实战">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      基础操作命令
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      高级Git技巧
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="高级Git技巧">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 设置代理解决网络问题
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      .git目录结构解析
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=".git目录结构解析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      关键文件功能说明：
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vscode" class="md-nav__link">
+    <span class="md-ellipsis">
+      VSCode高级操作指南
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      一、GitHub Actions同步方案
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、GitHub Actions同步方案">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      配置步骤
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      密钥配置流程
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      二、仓库创建与克隆指南
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、仓库创建与克隆指南">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 创建仓库
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-ssh" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 克隆仓库（SSH协议）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      三、免密登录配置
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、免密登录配置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      核心原理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      操作步骤
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git-hook" class="md-nav__link">
+    <span class="md-ellipsis">
+      四、Git Hook跨平台适配
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、Git Hook跨平台适配">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      操作系统差异对比
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hookemoji" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hook脚本示例（提交信息自动加Emoji）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      五、备份方案对比
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#markdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      Markdown文档规范
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Markdown文档规范">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      基础语法速查
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      代码块与表格
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      湖南大学框架解析
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="湖南大学框架解析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      三层架构解析
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      关键修改实践
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      最终交付要求
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      实战练习题
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="实战练习题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      练习仓库任务
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Git任务
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      框架修改任务
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      文档任务
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      提交要求
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -619,9 +1062,7 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -695,9 +1136,7 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -828,9 +1267,7 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -924,9 +1361,633 @@
   
 
 
-  <h1>提交</h1>
-
-
+<h1 id="_1">代码能力提升实战教程<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="git">Git工作流实战<a class="headerlink" href="#git" title="Permanent link">&para;</a></h2>
+<h3 id="_2">基础操作命令<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">代码提交</label><label for="__tabbed_1_2">分支管理</label><label for="__tabbed_1_3">拉取更新</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span>
+<span class="normal"><a href="#__codelineno-0-5">5</a></span>
+<span class="normal"><a href="#__codelineno-0-6">6</a></span>
+<span class="normal"><a href="#__codelineno-0-7">7</a></span>
+<span class="normal"><a href="#__codelineno-0-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1"># 添加修改文件</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>git<span class="w"> </span>add<span class="w"> </span>.
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="c1"># 提交更改</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;✨ 修复云台校准逻辑&quot;</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="c1"># 推送到远程仓库</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a>git<span class="w"> </span>push<span class="w"> </span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span>
+<span class="normal"><a href="#__codelineno-1-6">6</a></span>
+<span class="normal"><a href="#__codelineno-1-7">7</a></span>
+<span class="normal"><a href="#__codelineno-1-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="c1"># 创建新分支</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a>git<span class="w"> </span>branch<span class="w"> </span>xxx
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="c1"># 切换分支</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a>git<span class="w"> </span>checkout<span class="w"> </span>xxx
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a>
+<a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="c1"># 创建并切换分支</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8"></a>git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>xxx
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span>
+<span class="normal"><a href="#__codelineno-2-5">5</a></span>
+<span class="normal"><a href="#__codelineno-2-6">6</a></span>
+<span class="normal"><a href="#__codelineno-2-7">7</a></span>
+<span class="normal"><a href="#__codelineno-2-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="c1"># 拉取当前分支更新</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a>git<span class="w"> </span>pull
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="c1"># 获取所有分支更新</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a>git<span class="w"> </span>fetch<span class="w"> </span>--all
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="c1"># 合并特定分支</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8"></a>git<span class="w"> </span>merge<span class="w"> </span>origin/xxx
+</code></pre></div></td></tr></table></div>
+</div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">分支操作注意事项</p>
+<p>在执行分支操作前，请务必使用 <code>git branch</code> 确认当前所在分支。<br />
+这里输出的名称是你当前所在分支的名称，后面的 <code>&lt;current_branch_name&gt;</code> 均应替换为你当前所在分支的名称，即上个命令的输出。</p>
+</div>
+<h3 id="git_1">高级Git技巧<a class="headerlink" href="#git_1" title="Permanent link">&para;</a></h3>
+<h4 id="1">1. 设置代理解决网络问题<a class="headerlink" href="#1" title="Permanent link">&para;</a></h4>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span>
+<span class="normal"><a href="#__codelineno-3-3">3</a></span>
+<span class="normal"><a href="#__codelineno-3-4">4</a></span>
+<span class="normal"><a href="#__codelineno-3-5">5</a></span>
+<span class="normal"><a href="#__codelineno-3-6">6</a></span>
+<span class="normal"><a href="#__codelineno-3-7">7</a></span>
+<span class="normal"><a href="#__codelineno-3-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="c1"># 设置代理</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>http.proxy<span class="w"> </span>http://127.0.0.1:7890
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>https.proxy<span class="w"> </span>https://127.0.0.1:7890
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a>
+<a id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="c1"># 查看当前代理配置</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>--get<span class="w"> </span>http.proxy
+<a id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="c1"># 取消代理设置</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>--unset<span class="w"> </span>http.proxy
+</code></pre></div></td></tr></table></div>
+<h3 id="git_2">.git目录结构解析<a class="headerlink" href="#git_2" title="Permanent link">&para;</a></h3>
+<p>Git的核心是<code>.git</code>目录，包含版本控制的所有信息</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-4-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-4-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-4-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-4-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-4-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-4-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-4-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-4-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-4-10">10</a></span>
+<span class="normal"><a href="#__codelineno-4-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>.git/
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a>├──<span class="w"> </span>HEAD<span class="w">            </span><span class="c1"># 当前所在分支指针</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3"></a>├──<span class="w"> </span>config<span class="w">          </span><span class="c1"># 仓库特定配置</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4"></a>├──<span class="w"> </span>description<span class="w">     </span><span class="c1"># 仓库描述</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5"></a>├──<span class="w"> </span>hooks/<span class="w">          </span><span class="c1"># 客户端钩子脚本</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6"></a>├──<span class="w"> </span>info/<span class="w">           </span><span class="c1"># 全局排除模式</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7"></a>├──<span class="w"> </span>objects/<span class="w">        </span><span class="c1"># 所有数据对象</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8"></a>├──<span class="w"> </span>refs/<span class="w">           </span><span class="c1"># 分支和标签指针</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9"></a>│<span class="w">   </span>├──<span class="w"> </span>heads/<span class="w">      </span><span class="c1"># 分支指针</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10"></a>│<span class="w">   </span>└──<span class="w"> </span>tags/<span class="w">       </span><span class="c1"># 标签指针</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11"></a>└──<span class="w"> </span>index<span class="w">           </span><span class="c1"># 暂存区信息</span>
+</code></pre></div></td></tr></table></div>
+<h4 id="_3">关键文件功能说明：<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>文件/目录</th>
+<th>功能说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>HEAD</strong></td>
+<td>指向当前分支的引用，内容如 <code>ref: refs/heads/main</code></td>
+</tr>
+<tr>
+<td><strong>config</strong></td>
+<td>仓库级配置，优先级高于全局配置，可设置远程仓库URL、分支跟踪等</td>
+</tr>
+<tr>
+<td><strong>hooks/</strong></td>
+<td>客户端钩子脚本，可自定义Git操作前后触发的事件（如pre-commit, post-merge）</td>
+</tr>
+<tr>
+<td><strong>objects/</strong></td>
+<td>数据库对象存储（blob-文件内容, tree-目录结构, commit-提交信息）</td>
+</tr>
+<tr>
+<td><strong>refs/heads/</strong></td>
+<td>分支指针文件，每个文件对应一个分支，内容为最新提交的SHA-1值</td>
+</tr>
+<tr>
+<td><strong>index</strong></td>
+<td>暂存区索引，记录下次提交的文件状态（二进制文件）</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>比喻理解</strong>：<code>.git</code>目录就像机器人的"黑匣子"，完整记录项目的所有历史变更</p>
+</blockquote>
+<h3 id="vscode">VSCode高级操作指南<a class="headerlink" href="#vscode" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>解决代码冲突</strong>：</li>
+<li>打开冲突文件，选择"Accept Current Change"或"Accept Incoming Change"</li>
+<li>
+<p>或手动编辑解决冲突后标记为已解决</p>
+</li>
+<li>
+<p><strong>提交Pull Request</strong>：
+   <pre class="mermaid"><code>graph LR
+A[推送分支到远程] --&gt; B[在GitHub创建PR]
+B --&gt; C[团队成员审查代码]
+C --&gt; D[解决审查意见]
+D --&gt; E[合并到主分支]</code></pre></p>
+</li>
+<li>
+<p><strong>可视化版本回退</strong>：</p>
+</li>
+<li>打开VSCode源代码管理视图</li>
+<li>右键提交记录选择"撤销提交"</li>
+<li>或使用"重置当前分支到此次提交"</li>
+</ol>
+<div class="admonition success">
+<p class="admonition-title">最终交付要求</p>
+<ul>
+<li>在组织仓库提交至少1个PR</li>
+<li>完成1次代码冲突解决</li>
+<li>演示版本回退操作</li>
+<li>PR需包含有意义的描述和修改说明</li>
+</ul>
+</div>
+<p>以下是针对代码双平台备份（GitHub+Gitee）的完整解决方案，整合自动同步、仓库管理、免密登录及跨平台Hook配置：</p>
+<hr />
+<h3 id="github-actions">一、GitHub Actions同步方案<a class="headerlink" href="#github-actions" title="Permanent link">&para;</a></h3>
+<h4 id="_4"><strong>配置步骤</strong><a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">.github/workflows/sync.yml</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-5-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-5-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-5-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-5-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-5-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-5-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-5-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-5-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-5-10">10</a></span>
+<span class="normal"><a href="#__codelineno-5-11">11</a></span>
+<span class="normal"><a href="#__codelineno-5-12">12</a></span>
+<span class="normal"><a href="#__codelineno-5-13">13</a></span>
+<span class="normal"><a href="#__codelineno-5-14">14</a></span>
+<span class="normal"><a href="#__codelineno-5-15">15</a></span>
+<span class="normal"><a href="#__codelineno-5-16">16</a></span>
+<span class="normal"><a href="#__codelineno-5-17">17</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Sync to Gitee</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="nt">on</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">push</span><span class="p p-Indicator">]</span><span class="w">  </span><span class="c1"># 代码推送时触发</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="nt">jobs</span><span class="p">:</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="w">  </span><span class="nt">mirror</span><span class="p">:</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7"></a><span class="w">    </span><span class="nt">steps</span><span class="p">:</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Checkout</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9"></a><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/checkout@v4</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10"></a>
+<a id="__codelineno-5-11" name="__codelineno-5-11"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Mirror to Gitee</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12"></a><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wearerequired/git-mirror-action@v1</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13"></a><span class="w">        </span><span class="nt">env</span><span class="p">:</span>
+<a id="__codelineno-5-14" name="__codelineno-5-14"></a><span class="w">          </span><span class="nt">SSH_PRIVATE_KEY</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ secrets.GITEE_SSH_KEY }}</span><span class="w">  </span><span class="c1"># 私钥存入GitHub Secrets</span>
+<a id="__codelineno-5-15" name="__codelineno-5-15"></a><span class="w">        </span><span class="nt">with</span><span class="p">:</span>
+<a id="__codelineno-5-16" name="__codelineno-5-16"></a><span class="w">          </span><span class="nt">source-repo</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;[email?protected]:yourname/repo.git&quot;</span>
+<a id="__codelineno-5-17" name="__codelineno-5-17"></a><span class="w">          </span><span class="nt">destination-repo</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;[email?protected]:yourname/repo.git&quot;</span>
+</code></pre></div></td></tr></table></div>
+</div>
+</div>
+</div>
+<h4 id="_5"><strong>密钥配置流程</strong><a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
+<ol>
+<li><strong>生成密钥对</strong>（所有系统通用）：
+    <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
+<span class="normal"><a href="#__codelineno-6-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a>ssh-keygen<span class="w"> </span>-t<span class="w"> </span>rsa<span class="w"> </span>-C<span class="w"> </span><span class="s2">&quot;[email?protected]&quot;</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="c1"># 默认路径：~/.ssh/id_rsa（私钥）和 id_rsa.pub（公钥）</span>
+</code></pre></div></td></tr></table></div></li>
+<li><strong>公钥添加至Gitee</strong>：<br />
+<code>设置 -&gt; SSH公钥</code> 粘贴 <code>id_rsa.pub</code> 内容  </li>
+<li><strong>私钥存入GitHub Secrets</strong>：<br />
+<code>仓库Settings -&gt; Secrets -&gt; New repository secret</code><br />
+   名称填 <code>GITEE_SSH_KEY</code>，值粘贴私钥文件<strong>完整内容</strong>（含<code>-----BEGIN RSA PRIVATE KEY-----</code>）</li>
+</ol>
+<blockquote>
+<p>✅ <strong>验证同步</strong>：GitHub推送后查看Actions日志，成功同步后Gitee仓库更新时间应与GitHub一致</p>
+</blockquote>
+<hr />
+<h3 id="_6">二、仓库创建与克隆指南<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<h4 id="1_1"><strong>1. 创建仓库</strong><a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>GitHub</strong>：主页 → "+" → New repository  </li>
+<li><strong>Gitee</strong>：项目 → "+" → 创建仓库 → <strong>不初始化</strong>（避免冲突）</li>
+</ul>
+<p>然后对着终端输入相应命令即可。</p>
+<h4 id="2-ssh"><strong>2. 克隆仓库（SSH协议）</strong><a class="headerlink" href="#2-ssh" title="Permanent link">&para;</a></h4>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
+<span class="normal"><a href="#__codelineno-7-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="c1"># 通用命令（需提前配置SSH密钥）</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2"></a>git<span class="w"> </span>clone<span class="w"> </span><span class="o">[</span>email?protected<span class="o">]</span>:yourname/repo.git
+</code></pre></div></td></tr></table></div>
+<hr />
+<h3 id="_7">三、免密登录配置<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<h4 id="_8"><strong>核心原理</strong><a class="headerlink" href="#_8" title="Permanent link">&para;</a></h4>
+<p>通过SSH公钥认证，客户端用私钥签名，服务端用公钥验证<br />
+<img alt="" src="https://www.wsisp.com/ssh-auth-flow.png" /></p>
+<h4 id="_9"><strong>操作步骤</strong><a class="headerlink" href="#_9" title="Permanent link">&para;</a></h4>
+<ol>
+<li><strong>本地生成密钥</strong>（Windows示例）：
+   <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
+<span class="normal"><a href="#__codelineno-8-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="c"># PowerShell</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="n">ssh-keygen</span> <span class="n">-t</span> <span class="n">rsa</span>  <span class="c"># 三次回车跳过密码</span>
+</code></pre></div></td></tr></table></div></li>
+<li><strong>上传公钥到远程</strong>：
+   <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span>
+<span class="normal"><a href="#__codelineno-9-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="n">scp</span> <span class="n">C</span><span class="p">:\</span><span class="n">Users</span><span class="p">\</span><span class="n">user</span><span class="p">\.</span><span class="n">ssh</span><span class="p">\</span><span class="n">id_rsa</span><span class="p">.</span><span class="n">pub</span> <span class="n">user</span><span class="nv">@gitee</span><span class="p">.</span><span class="n">com</span><span class="p">:~/.</span><span class="n">ssh</span><span class="p">/</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2"></a><span class="n">ssh</span> <span class="n">user</span><span class="nv">@gitee</span><span class="p">.</span><span class="n">com</span> <span class="s2">&quot;cat ~/.ssh/id_rsa.pub &gt;&gt; ~/.ssh/authorized_keys&quot;</span>
+</code></pre></div></td></tr></table></div></li>
+<li><strong>权限修正（关键！）</strong>：<br />
+   <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span>
+<span class="normal"><a href="#__codelineno-10-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a>chmod<span class="w"> </span><span class="m">700</span><span class="w"> </span>~/.ssh
+<a id="__codelineno-10-2" name="__codelineno-10-2"></a>chmod<span class="w"> </span><span class="m">600</span><span class="w"> </span>~/.ssh/authorized_keys<span class="w">  </span><span class="c1"># 权限不足会导致认证失败</span>
+</code></pre></div></td></tr></table></div></li>
+</ol>
+<hr />
+<h3 id="git-hook">四、Git Hook跨平台适配<a class="headerlink" href="#git-hook" title="Permanent link">&para;</a></h3>
+<h4 id="_10"><strong>操作系统差异对比</strong><a class="headerlink" href="#_10" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>要素</th>
+<th>Linux/Mac</th>
+<th>Windows</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>脚本语言</strong></td>
+<td>Bash</td>
+<td>PowerShell/Batch</td>
+</tr>
+<tr>
+<td><strong>路径分隔符</strong></td>
+<td><code>/</code></td>
+<td><code>\</code></td>
+</tr>
+<tr>
+<td><strong>执行权限</strong></td>
+<td><code>chmod +x .git/hooks/*</code></td>
+<td>无需权限设置</td>
+</tr>
+</tbody>
+</table>
+<h4 id="hookemoji"><strong>Hook脚本示例（提交信息自动加Emoji）</strong><a class="headerlink" href="#hookemoji" title="Permanent link">&para;</a></h4>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Linux/Mac (.git/hooks/pre-commit)</label><label for="__tabbed_3_2">Windows (.git/hooks/pre-commit.ps1)</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span>
+<span class="normal"><a href="#__codelineno-11-2">2</a></span>
+<span class="normal"><a href="#__codelineno-11-3">3</a></span>
+<span class="normal"><a href="#__codelineno-11-4">4</a></span>
+<span class="normal"><a href="#__codelineno-11-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="ch">#!/bin/sh</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2"></a><span class="nv">MSG</span><span class="o">=</span><span class="k">$(</span>cat<span class="w"> </span><span class="nv">$1</span><span class="k">)</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3"></a><span class="k">if</span><span class="w"> </span><span class="o">[[</span><span class="w"> </span>!<span class="w"> </span><span class="nv">$MSG</span><span class="w"> </span><span class="o">=</span>~<span class="w"> </span>✨<span class="p">|</span>🐛<span class="p">|</span>🔧<span class="w"> </span><span class="o">]]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4"></a><span class="w">  </span>sed<span class="w"> </span>-i<span class="w"> </span><span class="s1">&#39;1s/^/🔧 /&#39;</span><span class="w"> </span><span class="nv">$1</span><span class="w">  </span><span class="c1"># 无Emoji时自动添加</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5"></a><span class="k">fi</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1">1</a></span>
+<span class="normal"><a href="#__codelineno-12-2">2</a></span>
+<span class="normal"><a href="#__codelineno-12-3">3</a></span>
+<span class="normal"><a href="#__codelineno-12-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="nv">$MSG</span> <span class="p">=</span> <span class="nb">Get-Content</span> <span class="nv">$args</span><span class="p">[</span><span class="n">0</span><span class="p">]</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2"></a><span class="k">if</span> <span class="p">(</span><span class="nv">$MSG</span> <span class="o">-notmatch</span> <span class="s2">&quot;✨|🐛|🔧&quot;</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3"></a>  <span class="s2">&quot;🔧 $MSG&quot;</span> <span class="p">|</span> <span class="nb">Set-Content</span> <span class="nv">$args</span><span class="p">[</span><span class="n">0</span><span class="p">]</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+</div>
+</div>
+</div>
+<blockquote>
+<p>⚠️ <strong>注意事项</strong>：<br />
+1. Windows需删除脚本后缀（<code>.ps1</code>→无后缀）<br />
+2. 跨团队协作时Hook<strong>不纳入版本控制</strong>（避免执行冲突）  </p>
+</blockquote>
+<hr />
+<h3 id="_11">五、备份方案对比<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>方案</th>
+<th>自动化</th>
+<th>安全性</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>GitHub Actions</strong></td>
+<td>✅</td>
+<td>★★★★</td>
+<td>开源项目/团队协作</td>
+</tr>
+<tr>
+<td>本地双remote推送</td>
+<td>❌</td>
+<td>★★☆</td>
+<td>个人小项目</td>
+</tr>
+<tr>
+<td>定时脚本同步</td>
+<td>✅</td>
+<td>★★★☆</td>
+<td>私有服务器备份</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💎 <strong>推荐策略</strong>：<br />
+- 主仓库用 <strong>GitHub Actions 实时同步</strong>到 Gitee<br />
+- 关键版本额外备份至<strong>私有NAS</strong>（通过<code>rsync</code> + <code>cron</code>）  </p>
+</blockquote>
+<p>通过此方案，开发者只需维护GitHub仓库，即可实现Gitee镜像自动更新，同时保障跨平台开发体验一致性。</p>
+<h2 id="markdown">Markdown文档规范<a class="headerlink" href="#markdown" title="Permanent link">&para;</a></h2>
+<h3 id="_12">基础语法速查<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-13-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-13-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-13-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-13-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-13-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-13-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-13-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-13-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-13-10">10</a></span>
+<span class="normal"><a href="#__codelineno-13-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1"></a><span class="gh"># 一级标题</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2"></a><span class="gu">## 二级标题</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3"></a>
+<a id="__codelineno-13-4" name="__codelineno-13-4"></a><span class="k">-</span><span class="w"> </span>无序列表项
+<a id="__codelineno-13-5" name="__codelineno-13-5"></a><span class="k">1.</span> 有序列表项
+<a id="__codelineno-13-6" name="__codelineno-13-6"></a>
+<a id="__codelineno-13-7" name="__codelineno-13-7"></a><span class="gs">**粗体**</span> <span class="ge">*斜体*</span> <span class="gd">~~删除线~~</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8"></a>
+<a id="__codelineno-13-9" name="__codelineno-13-9"></a>[<span class="nt">链接文本</span>](<span class="na">https://example.com</span>)
+<a id="__codelineno-13-10" name="__codelineno-13-10"></a>
+<a id="__codelineno-13-11" name="__codelineno-13-11"></a>![<span class="nt">图片描述</span>](<span class="na">image.png</span>)
+</code></pre></div></td></tr></table></div>
+<h3 id="_13">代码块与表格<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">代码块</label><label for="__tabbed_4_2">表格</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1">1</a></span>
+<span class="normal"><a href="#__codelineno-14-2">2</a></span>
+<span class="normal"><a href="#__codelineno-14-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1"></a><span class="c1">// 底盘控制参数示例</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2"></a><span class="cp">#define CHASSIS_MAX_VELOCITY 3.0f </span><span class="c1">// m/s</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3"></a><span class="cp">#define CHASSIS_ROTATE_RATIO 0.6f</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能描述</th>
+<th>依赖项</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>can.c</code></td>
+<td>CAN总线通信</td>
+<td>bsp_can</td>
+</tr>
+<tr>
+<td><code>gimbal.c</code></td>
+<td>云台控制逻辑</td>
+<td>pid, motor</td>
+</tr>
+<tr>
+<td><code>shoot.c</code></td>
+<td>发射机构控制</td>
+<td>friction, feed</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">文档规范要求</p>
+<ol>
+<li>使用三级标题结构组织内容</li>
+<li>关键参数必须使用代码块标注</li>
+<li>模块依赖关系用表格清晰展示</li>
+<li>复杂流程配合mermaid流程图说明</li>
+</ol>
+</div>
+<h2 id="_14">湖南大学框架解析<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
+<h3 id="_15">三层架构解析<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<pre class="mermaid"><code>graph TD
+A[硬件层] --&gt;|提供驱动| B[BSP抽象层]
+B --&gt;|标准接口| C[MODULE驱动层]
+C --&gt;|功能模块| D[APP应用层]
+D --&gt;|控制指令| C
+C --&gt;|设备操作| B</code></pre>
+<blockquote>
+<p><strong>比喻理解</strong>：框架就像机器人身体的神经系统：
+- 硬件层是四肢和感官（电机、传感器）
+- BSP层是脊髓（基础反射）
+- MODULE层是小脑（协调运动）
+- APP层是大脑（高级决策）</p>
+</blockquote>
+<h3 id="_16">关键修改实践<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:3"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">底盘参数调整</label><label for="__tabbed_5_2">云台校准流程</label><label for="__tabbed_5_3">开发板配置切换</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-1">1</a></span>
+<span class="normal"><a href="#__codelineno-15-2">2</a></span>
+<span class="normal"><a href="#__codelineno-15-3">3</a></span>
+<span class="normal"><a href="#__codelineno-15-4">4</a></span>
+<span class="normal"><a href="#__codelineno-15-5">5</a></span>
+<span class="normal"><a href="#__codelineno-15-6">6</a></span>
+<span class="normal"><a href="#__codelineno-15-7">7</a></span>
+<span class="normal"><a href="#__codelineno-15-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1"></a><span class="c1">// 文件路径：modules/chassis/chassis.c</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2"></a><span class="kt">void</span><span class="w"> </span><span class="nf">chassis_task</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3"></a><span class="w">    </span><span class="c1">// 修改最大速度参数</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4"></a><span class="w">    </span><span class="n">chassis</span><span class="p">.</span><span class="n">max_velocity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">3.5f</span><span class="p">;</span><span class="w"> </span><span class="c1">// 原值3.0f</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5"></a>
+<a id="__codelineno-15-6" name="__codelineno-15-6"></a><span class="w">    </span><span class="c1">// 调整旋转灵敏度</span>
+<a id="__codelineno-15-7" name="__codelineno-15-7"></a><span class="w">    </span><span class="n">chassis</span><span class="p">.</span><span class="n">rotate_sensitivity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.7f</span><span class="p">;</span><span class="w"> </span><span class="c1">// 原值0.6f</span>
+<a id="__codelineno-15-8" name="__codelineno-15-8"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-16-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-16-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-16-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-16-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-16-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-16-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-16-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-16-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-16-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-16-10">10</a></span>
+<span class="normal"><a href="#__codelineno-16-11">11</a></span>
+<span class="normal"><a href="#__codelineno-16-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1"></a><span class="c1">// 文件路径：applications/gimbal_task.c</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2"></a><span class="kt">void</span><span class="w"> </span><span class="nf">gimbal_calibration</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3"></a><span class="w">    </span><span class="c1">// 新增校准超时检测</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">timeout</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">5000</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// 增加5秒超时判断</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5"></a><span class="w">        </span><span class="n">ERROR_HANDLE</span><span class="p">(</span><span class="n">CALIBRATION_TIMEOUT</span><span class="p">);</span>
+<a id="__codelineno-16-6" name="__codelineno-16-6"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-16-7" name="__codelineno-16-7"></a>
+<a id="__codelineno-16-8" name="__codelineno-16-8"></a><span class="w">    </span><span class="c1">// 修改零点检测阈值</span>
+<a id="__codelineno-16-9" name="__codelineno-16-9"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">fabs</span><span class="p">(</span><span class="n">current_angle</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">0.01f</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// 原值0.05f</span>
+<a id="__codelineno-16-10" name="__codelineno-16-10"></a><span class="w">        </span><span class="n">set_zero_position</span><span class="p">();</span>
+<a id="__codelineno-16-11" name="__codelineno-16-11"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-16-12" name="__codelineno-16-12"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-17-1">1</a></span>
+<span class="normal"><a href="#__codelineno-17-2">2</a></span>
+<span class="normal"><a href="#__codelineno-17-3">3</a></span>
+<span class="normal"><a href="#__codelineno-17-4">4</a></span>
+<span class="normal"><a href="#__codelineno-17-5">5</a></span>
+<span class="normal"><a href="#__codelineno-17-6">6</a></span>
+<span class="normal"><a href="#__codelineno-17-7">7</a></span>
+<span class="normal"><a href="#__codelineno-17-8">8</a></span>
+<span class="normal"><a href="#__codelineno-17-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1"></a><span class="c1">// 在board.h中选择开发板配置</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2"></a><span class="cp">#define BOARD_TYPE_BOARD_A</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3"></a><span class="c1">// #define BOARD_TYPE_BOARD_B</span>
+<a id="__codelineno-17-4" name="__codelineno-17-4"></a>
+<a id="__codelineno-17-5" name="__codelineno-17-5"></a><span class="cp">#ifdef BOARD_TYPE_BOARD_A</span>
+<a id="__codelineno-17-6" name="__codelineno-17-6"></a><span class="w">    </span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;board_a_config.h&quot;</span>
+<a id="__codelineno-17-7" name="__codelineno-17-7"></a><span class="cp">#elif defined BOARD_TYPE_BOARD_B</span>
+<a id="__codelineno-17-8" name="__codelineno-17-8"></a><span class="w">    </span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;board_b_config.h&quot;</span>
+<a id="__codelineno-17-9" name="__codelineno-17-9"></a><span class="cp">#endif</span>
+</code></pre></div></td></tr></table></div>
+</div>
+</div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">重要注意事项</p>
+<ol>
+<li>修改参数后必须进行完整编译 <code>make clean &amp;&amp; make</code></li>
+<li>条件编译切换后需重新初始化外设</li>
+<li>所有修改必须通过git提交并推送到远程仓库</li>
+</ol>
+</div>
+<h3 id="_17">最终交付要求<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<ol>
+<li>提交三层架构图（mermaid格式）</li>
+<li>演示底盘/云台参数修改效果</li>
+<li>展示条件编译切换开发板配置</li>
+<li>所有代码修改通过PR提交到组织仓库</li>
+</ol>
+<h2 id="_18">实战练习题<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h2>
+<h3 id="_19">练习仓库任务<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-18-1">1</a></span>
+<span class="normal"><a href="#__codelineno-18-2">2</a></span>
+<span class="normal"><a href="#__codelineno-18-3">3</a></span>
+<span class="normal"><a href="#__codelineno-18-4">4</a></span>
+<span class="normal"><a href="#__codelineno-18-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1"></a><span class="c1"># 克隆练习仓库</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/RoboMaster/training-lab.git
+<a id="__codelineno-18-3" name="__codelineno-18-3"></a>
+<a id="__codelineno-18-4" name="__codelineno-18-4"></a><span class="c1"># 切换到练习分支</span>
+<a id="__codelineno-18-5" name="__codelineno-18-5"></a>git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>week1-training
+</code></pre></div></td></tr></table></div>
+<h3 id="git_3">Git任务<a class="headerlink" href="#git_3" title="Permanent link">&para;</a></h3>
+<ol>
+<li>配置Git代理并测试连接速度</li>
+<li>添加备份仓库并设置自动同步</li>
+<li>实现提交信息自动添加Emoji</li>
+<li>修改<code>.git/config</code>添加新的远程仓库</li>
+<li>解决预设冲突文件merge_conflict.c</li>
+</ol>
+<h3 id="_20">框架修改任务<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p>在gimbal.c中：
+   <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-19-1">1</a></span>
+<span class="normal"><a href="#__codelineno-19-2">2</a></span>
+<span class="normal"><a href="#__codelineno-19-3">3</a></span>
+<span class="normal"><a href="#__codelineno-19-4">4</a></span>
+<span class="normal"><a href="#__codelineno-19-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1"></a><span class="c1">// TODO: 添加云台角度软限制</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2"></a><span class="c1">// 要求: yaw范围[-π, π], pitch范围[0, π/2]</span>
+<a id="__codelineno-19-3" name="__codelineno-19-3"></a><span class="kt">void</span><span class="w"> </span><span class="nf">gimbal_angle_limit</span><span class="p">(</span><span class="kt">float</span><span class="o">*</span><span class="w"> </span><span class="n">yaw</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="o">*</span><span class="w"> </span><span class="n">pitch</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-19-4" name="__codelineno-19-4"></a><span class="w">    </span><span class="c1">// 你的代码</span>
+<a id="__codelineno-19-5" name="__codelineno-19-5"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p>在chassis.c中：
+   <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-20-1">1</a></span>
+<span class="normal"><a href="#__codelineno-20-2">2</a></span>
+<span class="normal"><a href="#__codelineno-20-3">3</a></span>
+<span class="normal"><a href="#__codelineno-20-4">4</a></span>
+<span class="normal"><a href="#__codelineno-20-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1"></a><span class="c1">// TODO: 添加底盘功率限制</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2"></a><span class="c1">// 当功率超过80W时线性降低速度</span>
+<a id="__codelineno-20-3" name="__codelineno-20-3"></a><span class="kt">void</span><span class="w"> </span><span class="nf">chassis_power_limit</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-20-4" name="__codelineno-20-4"></a><span class="w">    </span><span class="c1">// 你的代码</span>
+<a id="__codelineno-20-5" name="__codelineno-20-5"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div></p>
+</li>
+</ol>
+<h3 id="_21">文档任务<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
+<ol>
+<li>为新增功能编写文档说明</li>
+<li>创建参数配置表格</li>
+<li>绘制数据流程图：
+   <pre class="mermaid"><code>graph LR
+A[遥控器输入] --&gt; B[底盘控制]
+B --&gt; C[电机驱动]
+C --&gt; D[速度反馈]
+D --&gt; B</code></pre></li>
+</ol>
+<h3 id="_22">提交要求<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-21-1">1</a></span>
+<span class="normal"><a href="#__codelineno-21-2">2</a></span>
+<span class="normal"><a href="#__codelineno-21-3">3</a></span>
+<span class="normal"><a href="#__codelineno-21-4">4</a></span>
+<span class="normal"><a href="#__codelineno-21-5">5</a></span>
+<span class="normal"><a href="#__codelineno-21-6">6</a></span>
+<span class="normal"><a href="#__codelineno-21-7">7</a></span>
+<span class="normal"><a href="#__codelineno-21-8">8</a></span>
+<span class="normal"><a href="#__codelineno-21-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1"></a><span class="c1"># 完成所有任务后</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2"></a>git<span class="w"> </span>add<span class="w"> </span>.
+<a id="__codelineno-21-3" name="__codelineno-21-3"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;feat: 完成第一周训练任务&quot;</span>
+<a id="__codelineno-21-4" name="__codelineno-21-4"></a><span class="c1"># 提交时会自动添加✨前缀</span>
+<a id="__codelineno-21-5" name="__codelineno-21-5"></a>
+<a id="__codelineno-21-6" name="__codelineno-21-6"></a>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>week1-training
+<a id="__codelineno-21-7" name="__codelineno-21-7"></a>git<span class="w"> </span>push<span class="w"> </span>backup<span class="w"> </span>week1-training<span class="w">  </span><span class="c1"># 推送到备份仓库</span>
+<a id="__codelineno-21-8" name="__codelineno-21-8"></a>
+<a id="__codelineno-21-9" name="__codelineno-21-9"></a><span class="c1"># 创建Pull Request并标记导师审核</span>
+</code></pre></div></td></tr></table></div>
+<blockquote>
+<p><strong>专业提示</strong>：完成任务时保持"小步提交"原则，每个功能点单独提交，便于问题追踪和代码审查</p>
+</blockquote>
 
 
 
@@ -949,7 +2010,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="June 7, 2025 19:41:07 CST">June 7, 2025 19:41:07</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="2025年6月7日 19:41:07 CST">2025年6月7日 19:41:07</span>
   </span>
 
     
@@ -959,7 +2020,7 @@
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="June 7, 2025 19:41:07 CST">June 7, 2025 19:41:07</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="2025年6月7日 19:41:07 CST">2025年6月7日 19:41:07</span>
   </span>
 
     
@@ -978,12 +2039,6 @@
           
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
-        
-          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
-  Back to top
-</button>
         
       </main>
       
@@ -1069,7 +2124,7 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["annotations.dismiss", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.indexes", "navigation.top", "navigation.footer", "search.highlight", "search.share", "search.suggest", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["annotations.dismiss", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.sections", "navigation.indexes", "navigation.footer", "search.highlight", "search.share", "search.suggest", "toc.integrate", "navigation.collapse", "header.autohide"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../../assets/javascripts/bundle.13a4f30d.min.js"></script>

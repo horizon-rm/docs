@@ -3,19 +3,22 @@ theme:
   name: material
   features:
     - annotations.dismiss # 公告
-    # - navigation.instant
+    - navigation.instant
     - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky
+    - navigation.path
     - navigation.sections
-    - navigation.expand
+    # - navigation.expand
     - navigation.indexes
-    - navigation.top
+    # - navigation.top
     - navigation.footer
     - search.highlight
     - search.share
     - search.suggest
     - toc.integrate
+    - navigation.collapse  # 添加此选项启用侧边栏折叠功能
+    - header.autohide  # 滚动时自动隐藏顶部导航栏
   icon:
     repo: fontawesome/brands/git-alt
   palette: 
@@ -83,7 +86,6 @@ markdown_extensions: #详见https://squidfunk.github.io/mkdocs-material/setup/ex
       alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
-
 # 支持latex
 extra_javascript:
   - javascripts/config.js
@@ -96,14 +98,14 @@ plugins:
       type: datetime #时间类型
       custom_format: "%Y-%m-%d"  # 时间格式
       timezone: Asia/Shanghai #时区
-      locale: en #首选语言
+      locale: zh #首选语言改为中文
       fallback_to_build_date: true #许回退到git 不可用时mkdocs build执行的时间
       enable_creation_date: true #是否启用创建时间
       exclude:  #排除的页面
           - index.md
       enabled: true #是否启用
       strict: true
-
+  - search
       
 nav:
   - 主页: index.md
