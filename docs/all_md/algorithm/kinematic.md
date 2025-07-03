@@ -3,9 +3,9 @@
 $$\frac{1}{s}
     \begin{bmatrix}
         -\frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2} & r \\
-        -\frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2} & r \\
+        -\frac{\sqrt{2}}{2} & -\frac{\sqrt{2}}{2} & r \\
         \frac{\sqrt{2}}{2}  & -\frac{\sqrt{2}}{2} & r \\
-        \frac{\sqrt{2}}{2}  & -\frac{\sqrt{2}}{2} & r \\
+        \frac{\sqrt{2}}{2}  & \frac{\sqrt{2}}{2} & r \\
     \end{bmatrix} 
     \begin{bmatrix}
         v_x \\ v_y \\ \omega
