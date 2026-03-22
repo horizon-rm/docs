@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../complementary/">
+        <link rel="prev" href="../kinematic/">
       
       
-        <link rel="next" href="../../control/heat/">
+        <link rel="next" href="../gimbal/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>低通滤波 - Horizon 战队电控组博客</title>
+        <title>底盘跟随和小陀螺行进 - Horizon 战队电控组博客</title>
       
     
     
@@ -71,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#robomaster" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -103,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              低通滤波
+              底盘跟随和小陀螺行进
             
           </span>
         </div>
@@ -707,10 +712,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../chassis_ex/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    底盘跟随和小陀螺行进
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -721,6 +748,128 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 前言
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-chassis-follow" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 底盘跟随 (Chassis Follow)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 底盘跟随 (Chassis Follow)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 原理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 实现逻辑
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-spin-move" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 小陀螺行进 (Spin Move)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 小陀螺行进 (Spin Move)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 场景与坐标系定义
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 坐标转换原理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 完整控制流程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 代码实现
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5 优点与注意事项
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -753,8 +902,6 @@
                 
   
   
-    
-  
   
   
     
@@ -778,11 +925,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
         
           
           <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="">
@@ -798,7 +945,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_4">
             <span class="md-nav__icon md-icon"></span>
             常见滤波器
@@ -855,17 +1002,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../lowpass/" class="md-nav__link">
         
   
   
@@ -876,7 +1016,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1015,9 +1154,174 @@
   
 
 
-  <h1>低通滤波</h1>
-
-
+<h1 id="robomaster">RoboMaster 电控进阶培训：底盘与云台协同控制<a class="headerlink" href="#robomaster" title="Permanent link">&para;</a></h1>
+<h2 id="1">1. 前言<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<p>在RM赛场上，机器人的灵活性至关重要。本教程将围绕 <strong>“底盘跟随云台”</strong> 、 <strong>“小陀螺行进”</strong> 展开。</p>
+<p>学习目标：
+1. 理解底盘跟随中的PID解耦控制。
+2. 掌握小陀螺模式下的坐标系转换与速度合成。</p>
+<hr />
+<h2 id="2-chassis-follow">2. 底盘跟随 (Chassis Follow)<a class="headerlink" href="#2-chassis-follow" title="Permanent link">&para;</a></h2>
+<p><strong>场景</strong>：云台瞄准目标时，底盘可以独立运动，但始终保证车头（底盘x轴）指向云台朝向，或者保持相对位置。</p>
+<h3 id="21">2.1 原理<a class="headerlink" href="#21" title="Permanent link">&para;</a></h3>
+<p>底盘跟随的核心是<strong>角度闭环</strong>。我们需要控制底盘旋转，使得底盘的朝向（通常由陀螺仪yaw或底盘电机编码器推算）与云台的朝向之间的误差为0。</p>
+<p>设：</p>
+<ul>
+<li>
+<p><span class="arithmatex">\( \theta_{gimbal} \)</span>：<strong>云台当前朝向</strong>（相对于世界坐标系/惯性系）。</p>
+</li>
+<li>
+<p><span class="arithmatex">\( \theta_{chassis} \)</span>：<strong>底盘正方向</strong>朝向。</p>
+</li>
+<li>
+<p>误差 <span class="arithmatex">\( \theta_{Angle\_relative} = \theta_{gimbal} - \theta_{chassis} \)</span>。</p>
+</li>
+</ul>
+<p>通过PID控制器（通常是位置式PID）计算出一个<strong>角速度</strong> <span class="arithmatex">\( \omega_{out} \)</span>，叠加到底盘的运动学解算中。</p>
+<h3 id="22">2.2 实现逻辑<a class="headerlink" href="#22" title="Permanent link">&para;</a></h3>
+<p>根据公式</p>
+<div class="arithmatex">\[
+\begin{cases}
+\text{PID}_{\text{error}} = \theta_{\text{gimbal}} - \theta_{\text{chassis}} \\
+\text{PID}_{\text{aim}} = 0 \\
+\omega_{out} = \text{PID}_{\text{out}}
+\end{cases}
+\]</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">C</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
+</div>
+</div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span>
+<span class="normal"><a href="#__codelineno-0-5">5</a></span>
+<span class="normal"><a href="#__codelineno-0-6">6</a></span>
+<span class="normal"><a href="#__codelineno-0-7">7</a></span>
+<span class="normal"><a href="#__codelineno-0-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="n">ANGLE_Relative</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="n">MOTOR_V_GIMBAL</span><span class="p">[</span><span class="n">MOTOR_D_GIMBAL_YAW</span><span class="p">].</span><span class="n">DATA</span><span class="p">.</span><span class="n">ANGLE_NOW</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="n">MOTOR_V_GIMBAL</span><span class="p">[</span><span class="n">MOTOR_D_GIMBAL_YAW</span><span class="p">].</span><span class="n">DATA</span><span class="p">.</span><span class="n">ANGLE_INIT</span><span class="p">;</span><span class="w">  </span><span class="c1">// if add 4096</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="n">spinLittleRound</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ANGLE_Relative</span><span class="p">);</span><span class="w">   </span><span class="c1">// 跟随最小距离</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="c1">// 底盘跟随</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">DBUS</span><span class="o">-&gt;</span><span class="n">REMOTE</span><span class="p">.</span><span class="n">S2_u8</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="p">{</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">    </span><span class="p">(</span><span class="o">!</span><span class="p">((</span><span class="n">DBUS</span><span class="o">-&gt;</span><span class="n">REMOTE</span><span class="p">.</span><span class="n">DIR_int16</span><span class="p">)</span><span class="o">||</span><span class="p">(</span><span class="n">DBUS</span><span class="o">-&gt;</span><span class="n">KEY_BOARD</span><span class="p">.</span><span class="n">SHIFT</span><span class="p">)))</span><span class="o">?</span><span class="p">(</span><span class="n">PRIDICT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DBUS</span><span class="o">-&gt;</span><span class="n">REMOTE</span><span class="p">.</span><span class="n">CH2_int16</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">3.0f</span><span class="p">,</span><span class="n">VR</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PID_F_Cal</span><span class="p">(</span><span class="o">&amp;</span><span class="n">FOLLOW_PID</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="n">ANGLE_Relative</span><span class="p">))</span><span class="o">:</span><span class="p">(</span><span class="n">PRIDICT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0f</span><span class="p">);</span><span class="w">     </span><span class="c1">// 分离 滚轮影响小陀螺</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="3-spin-move">3. 小陀螺行进 (Spin Move)<a class="headerlink" href="#3-spin-move" title="Permanent link">&para;</a></h2>
+<h3 id="31">3.1 场景与坐标系定义<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
+<p>小陀螺模式下，底盘以恒定角速度旋转，同时需要进行平移运动。此时，我们希望遥控器的推杆方向与 <strong>云台的瞄准方向</strong> 解耦，即无论车头朝向何处，推杆向前始终让机器人朝着云台指向的目标方向移动。</p>
+<p>为了方便控制，我们做如下假设：</p>
+<ul>
+<li>
+<p><strong>云台坐标系 = 世界坐标系</strong>。这是因为在正常作战中，云台通过 PID 控制稳定指向目标，其 Yaw 轴相对于世界坐标系基本保持静止（或变化缓慢）。因此，我们可以将遥控器指令直接定义为 <strong>世界坐标系下的期望速度</strong> <span class="arithmatex">\((v_{x\_world}, v_{y\_world})\)</span>。</p>
+</li>
+<li>
+<p><strong>底盘坐标系</strong> 随车体旋转，其 Yaw 角 <span class="arithmatex">\(\theta_{chassis}\)</span> 由 IMU 或电机编码器实时获取。</p>
+</li>
+</ul>
+<h3 id="32">3.2 坐标转换原理<a class="headerlink" href="#32" title="Permanent link">&para;</a></h3>
+<p>由于遥控器指令已经表达在世界坐标系下，我们只需要将世界系速度 <strong>转换到底盘坐标系</strong>，即可代入麦轮运动学公式计算各轮转速。</p>
+<p>设：</p>
+<ul>
+<li>
+<p>世界系下的期望平移速度：<span class="arithmatex">\((v_{x\_world}, v_{y\_world})\)</span>（由遥控器直接给定）</p>
+</li>
+<li>
+<p>底盘当前朝向角：<span class="arithmatex">\(\theta_{chassis}\)</span>（相对于世界系）</p>
+</li>
+<li>
+<p><span class="arithmatex">\( \theta_{gimbal} \)</span>：<strong>云台当前朝向</strong>（相对于世界坐标系/惯性系）</p>
+</li>
+<li>
+<p>小陀螺旋转角速度：<span class="arithmatex">\(\omega_{spin}\)</span>（开环给定）</p>
+</li>
+</ul>
+<p>则底盘坐标系下的期望速度 <span class="arithmatex">\((v_{x\_chassis}, v_{y\_chassis})\)</span> 为：</p>
+<div class="arithmatex">\[
+\begin{bmatrix} 
+v_{x\_chassis} \\ 
+v_{y\_chassis} 
+\end{bmatrix} = 
+\begin{bmatrix} 
+\cos\theta_{Angle\_relative}&amp; -\sin\theta_{Angle\_relative} \\ 
+\sin\theta_{Angle\_relative} &amp; \cos\theta_{Angle\_relative} 
+\end{bmatrix}
+\begin{bmatrix} 
+v_{x\_world} \\ 
+v_{y\_world} 
+\end{bmatrix}
+\]</div>
+<p>此矩阵表示将世界系下的向量旋转 <span class="arithmatex">\(\theta_{Angle\_relative}\)</span> 角度，得到其在底盘系下的坐标。</p>
+<h3 id="33">3.3 完整控制流程<a class="headerlink" href="#33" title="Permanent link">&para;</a></h3>
+<ol>
+<li>读取遥控器数据，直接作为世界系期望速度 <span class="arithmatex">\((v_{x\_world}, v_{y\_world})\)</span>。</li>
+<li>读取底盘当前朝向 <span class="arithmatex">\(\theta_{chassis}\)</span>（由 IMU 或编码器积分获得）。</li>
+<li>通过旋转矩阵将世界系速度转换到底盘系。</li>
+<li>叠加小陀螺旋转速度 <span class="arithmatex">\(\omega_{spin}\)</span>（恒定值）。</li>
+<li>利用麦轮运动学公式计算四个电机的目标转速，并通过 CAN 总线发送。</li>
+</ol>
+<h3 id="34">3.4 代码实现<a class="headerlink" href="#34" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">C</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
+</div>
+</div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-1-10">10</a></span>
+<span class="normal"><a href="#__codelineno-1-11">11</a></span>
+<span class="normal"><a href="#__codelineno-1-12">12</a></span>
+<span class="normal"><a href="#__codelineno-1-13">13</a></span>
+<span class="normal"><a href="#__codelineno-1-14">14</a></span>
+<span class="normal"><a href="#__codelineno-1-15">15</a></span>
+<span class="normal"><a href="#__codelineno-1-16">16</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="n">ANGLE_Relative</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="n">MOTOR_V_GIMBAL</span><span class="p">[</span><span class="n">MOTOR_D_GIMBAL_YAW</span><span class="p">].</span><span class="n">DATA</span><span class="p">.</span><span class="n">ANGLE_NOW</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="p">(</span><span class="kt">float</span><span class="p">)</span><span class="n">MOTOR_V_GIMBAL</span><span class="p">[</span><span class="n">MOTOR_D_GIMBAL_YAW</span><span class="p">].</span><span class="n">DATA</span><span class="p">.</span><span class="n">ANGLE_INIT</span><span class="p">;</span><span class="w">  </span><span class="c1">// if add 4096</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="n">spinLittleRound</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ANGLE_Relative</span><span class="p">);</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="n">ANGLE_Rad</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ANGLE_Relative</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">MATH_D_RELATIVE_PARAM</span><span class="p">;</span><span class="w"> </span><span class="c1">// 单位转换成弧度</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="c1">// rotate matrix</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="kt">double</span><span class="w"> </span><span class="n">COS</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cos</span><span class="p">(</span><span class="n">ANGLE_Rad</span><span class="p">);</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="kt">double</span><span class="w"> </span><span class="n">SIN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sin</span><span class="p">(</span><span class="n">ANGLE_Rad</span><span class="p">);</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8"></a>
+<a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="n">ROTATE_VX</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="n">VY</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">SIN</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">VX</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">COS</span><span class="p">;</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="n">ROTATE_VY</span><span class="w"> </span><span class="o">=</span><span class="w">  </span><span class="n">VY</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">COS</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">VX</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">SIN</span><span class="p">;</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11"></a>
+<a id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="c1">// 运动学解算 COMPOENT是可调节系数</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="p">(</span><span class="n">DBUS</span><span class="o">-&gt;</span><span class="n">IS_OFF</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="p">(</span><span class="n">MOTOR</span><span class="p">[</span><span class="n">MOTOR_D_CHASSIS_1</span><span class="p">].</span><span class="n">DATA</span><span class="p">.</span><span class="n">AIM</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="n">MOTOR</span><span class="p">[</span><span class="n">MOTOR_D_CHASSIS_1</span><span class="p">].</span><span class="n">DATA</span><span class="p">.</span><span class="n">AIM</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">ROTATE_VX</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">ROTATE_VY</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">VR</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">COMPONENT</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">COMPONENT</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">PRIDICT</span><span class="p">);</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14"></a><span class="p">(</span><span class="n">DBUS</span><span class="o">-&gt;</span><span class="n">IS_OFF</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="p">(</span><span class="n">MOTOR</span><span class="p">[</span><span class="n">MOTOR_D_CHASSIS_2</span><span class="p">].</span><span class="n">DATA</span><span class="p">.</span><span class="n">AIM</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="n">MOTOR</span><span class="p">[</span><span class="n">MOTOR_D_CHASSIS_2</span><span class="p">].</span><span class="n">DATA</span><span class="p">.</span><span class="n">AIM</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="o">-</span><span class="n">ROTATE_VX</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">ROTATE_VY</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">VR</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">COMPONENT</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">COMPONENT</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">PRIDICT</span><span class="p">);</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15"></a><span class="p">(</span><span class="n">DBUS</span><span class="o">-&gt;</span><span class="n">IS_OFF</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="p">(</span><span class="n">MOTOR</span><span class="p">[</span><span class="n">MOTOR_D_CHASSIS_3</span><span class="p">].</span><span class="n">DATA</span><span class="p">.</span><span class="n">AIM</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="n">MOTOR</span><span class="p">[</span><span class="n">MOTOR_D_CHASSIS_3</span><span class="p">].</span><span class="n">DATA</span><span class="p">.</span><span class="n">AIM</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="o">-</span><span class="n">ROTATE_VX</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">ROTATE_VY</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">VR</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">COMPONENT</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">COMPONENT</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">PRIDICT</span><span class="p">);</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16"></a><span class="p">(</span><span class="n">DBUS</span><span class="o">-&gt;</span><span class="n">IS_OFF</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="p">(</span><span class="n">MOTOR</span><span class="p">[</span><span class="n">MOTOR_D_CHASSIS_4</span><span class="p">].</span><span class="n">DATA</span><span class="p">.</span><span class="n">AIM</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="n">MOTOR</span><span class="p">[</span><span class="n">MOTOR_D_CHASSIS_4</span><span class="p">].</span><span class="n">DATA</span><span class="p">.</span><span class="n">AIM</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">ROTATE_VX</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">ROTATE_VY</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">VR</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">COMPONENT</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">COMPONENT</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">PRIDICT</span><span class="p">);</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="35">3.5 优点与注意事项<a class="headerlink" href="#35" title="Permanent link">&para;</a></h3>
+<p><strong>优点</strong>  </p>
+<ul>
+<li>
+<p>计算量小，只需一次旋转矩阵运算。  </p>
+</li>
+<li>
+<p>控制逻辑清晰，遥控器指令直接对应世界系方向，便于操作手理解（推杆向前 = 朝场地前方移动，不受车头旋转影响）。</p>
+</li>
+</ul>
+<p><strong>注意事项</strong>  </p>
+<ul>
+<li>
+<p>必须保证云台确实能稳定在世界坐标系下（即云台 PID 足够强，使云台 Yaw 角基本不变）。如果云台跟随目标移动，则世界系定义需要相应调整（例如以目标方向为参考）。  </p>
+</li>
+<li>
+<p>底盘朝向角 <span class="arithmatex">\(\theta_{chassis}\)</span> 的获取必须准确且平滑，建议使用 IMU 数据进行滤波，避免因角度跳变导致速度突变。  </p>
+</li>
+<li>
+<p>小陀螺旋转速度 <span class="arithmatex">\(\omega_{spin}\)</span> 的切换需平滑（如使用斜坡函数），防止电机电流过冲。</p>
+</li>
+</ul>
+<hr />
 
 
 
@@ -1040,7 +1344,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="2025年6月8日 00:09:34 CST">2025年6月8日 00:09:34</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="2026年3月22日 21:52:08 CST">2026年3月22日 21:52:08</span>
   </span>
 
     
@@ -1050,7 +1354,7 @@
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="2025年6月7日 19:41:07 CST">2025年6月7日 19:41:07</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="2026年3月22日 21:52:08 CST">2026年3月22日 21:52:08</span>
   </span>
 
     
@@ -1079,7 +1383,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../complementary/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 互补滤波">
+          <a href="../kinematic/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 底盘运动学解算">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1089,20 +1393,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                互补滤波
+                底盘运动学解算
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../control/heat/" class="md-footer__link md-footer__link--next" aria-label="Next: 热量控制">
+          <a href="../gimbal/" class="md-footer__link md-footer__link--next" aria-label="Next: 云台">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                热量控制
+                云台
               </div>
             </div>
             <div class="md-footer__button md-icon">
