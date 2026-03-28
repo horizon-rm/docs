@@ -19,6 +19,7 @@ theme:
     - toc.integrate
     - navigation.collapse  # 添加此选项启用侧边栏折叠功能
     - header.autohide  # 滚动时自动隐藏顶部导航栏
+    - content.code.annotate
   icon:
     repo: fontawesome/brands/git-alt
   palette: 
@@ -92,7 +93,6 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
-
 plugins:
   - git-revision-date-localized:
       type: datetime #时间类型
@@ -116,12 +116,19 @@ nav:
         - 提交: all_md/env/git_commit.md
         - 合并main分支: all_md/env/git_merge_main.md
         - pr修正: all_md/env/git_pr_fix.md
-  - 算法层次:
-      - 底盘运动学解算: all_md/algorithm/kinematic.md
+  - 培训内容:
+      - 底盘运动学解算: all_md/algorithm/kinematic.md 
+      - 底盘跟随和小陀螺行进: all_md/algorithm/chassis_ex.md 
+      - 云台: all_md/algorithm/gimbal.md
+      - 发射和热量控制: all_md/algorithm/shoot.md
+      - 欧拉角和旋转矩阵: all_md/algorithm/rotate_matrix.md
       - 常见滤波器:
         - 卡尔曼滤波: all_md/algorithm/kalman.md
         - 互补滤波: all_md/algorithm/complementary.md
         - 低通滤波: all_md/algorithm/lowpass.md
-  - 其他:
-    - docker安装配置: all_md/other/docker.md
+  # - 其他: 
+    # - docker安装配置: all_md/other/docker.md
+  - 控制策略: 
+    - 热量控制: all_md/control/heat.md 
+
   - About: about.md

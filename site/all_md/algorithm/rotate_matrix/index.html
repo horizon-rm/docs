@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../install/">
+        <link rel="prev" href="../shoot/">
       
       
-        <link rel="next" href="../git_commit/">
+        <link rel="next" href="../kalman/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>配置 - Horizon 战队电控组博客</title>
+        <title>欧拉角和旋转矩阵 - Horizon 战队电控组博客</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#vscode-keil-stm32" class="md-skip">
+        <a href="#robomaster" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              配置
+              欧拉角和旋转矩阵
             
           </span>
         </div>
@@ -237,13 +237,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../install/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../env/install/" class="md-tabs__link">
           
   
   
@@ -261,11 +259,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../algorithm/kinematic/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../kinematic/" class="md-tabs__link">
           
   
   
@@ -399,12 +399,250 @@
       
   
   
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    环境
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            环境
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../env/install/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    安装
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../env/config/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    配置
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    git
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            git
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../env/git_commit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    提交
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../env/git_merge_main/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    合并main分支
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../env/git_pr_fix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    pr修正
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
   
     
     
+      
+        
+      
+        
+      
+        
       
         
       
@@ -428,15 +666,15 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
   <span class="md-ellipsis">
-    环境
+    培训内容
     
   </span>
   
@@ -444,10 +682,10 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            环境
+            培训内容
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -458,12 +696,81 @@
   
   
     <li class="md-nav__item">
-      <a href="../install/" class="md-nav__link">
+      <a href="../kinematic/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    安装
+    底盘运动学解算
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chassis_ex/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    底盘跟随和小陀螺行进
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gimbal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    云台
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shoot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    发射和热量控制
     
   </span>
   
@@ -487,13 +794,15 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
   
   <span class="md-ellipsis">
-    配置
+    欧拉角和旋转矩阵
     
   </span>
   
@@ -506,7 +815,7 @@
   
   
   <span class="md-ellipsis">
-    配置
+    欧拉角和旋转矩阵
     
   </span>
   
@@ -519,6 +828,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -527,9 +838,168 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#vscode-keil-stm32" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      vscode + keil + stm32 开发
+      1. 引言
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 二维平面旋转
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 二维平面旋转">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 旋转矩阵推导
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-vs" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 坐标系旋转 vs. 向量旋转
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 三维旋转矩阵
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 三维旋转矩阵">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 绕基本坐标轴的旋转
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 复合旋转
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 欧拉角
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 欧拉角">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 定义与旋转顺序
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 从旋转矩阵到欧拉角
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 万向锁
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 坐标变换在机器人控制中的应用
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 坐标变换在机器人控制中的应用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 云台坐标系与底盘坐标系的转换
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-imu" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 IMU 数据与欧拉角
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.3 旋转矩阵的几何意义
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 总结
     </span>
   </a>
   
@@ -575,317 +1045,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
-    git
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_3">
-            <span class="md-nav__icon md-icon"></span>
-            git
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../git_commit/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    提交
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../git_merge_main/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    合并main分支
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../git_pr_fix/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    pr修正
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    培训内容
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            培训内容
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../algorithm/kinematic/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    底盘运动学解算
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../algorithm/chassis_ex/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    底盘跟随和小陀螺行进
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../algorithm/gimbal/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    云台
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../algorithm/shoot/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    发射和热量控制
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../algorithm/rotate_matrix/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    欧拉角和旋转矩阵
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
         
           
-          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="">
             
   
   
@@ -912,7 +1075,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../algorithm/kalman/" class="md-nav__link">
+      <a href="../kalman/" class="md-nav__link">
         
   
   
@@ -935,7 +1098,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../algorithm/complementary/" class="md-nav__link">
+      <a href="../complementary/" class="md-nav__link">
         
   
   
@@ -958,7 +1121,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../algorithm/lowpass/" class="md-nav__link">
+      <a href="../lowpass/" class="md-nav__link">
         
   
   
@@ -1107,9 +1270,136 @@
   
 
 
-  <h1>配置</h1>
-
-<h2 id="vscode-keil-stm32">vscode + keil + stm32 开发<a class="headerlink" href="#vscode-keil-stm32" title="Permanent link">&para;</a></h2>
+<h1 id="robomaster">RoboMaster 电控进阶培训：旋转矩阵与欧拉角<a class="headerlink" href="#robomaster" title="Permanent link">&para;</a></h1>
+<h2 id="1">1. 引言<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<p>在机器人控制中，描述姿态与坐标变换是基础中的基础。无论是云台控制、底盘运动学，还是 IMU 数据处理，都离不开旋转矩阵与欧拉角这两个核心工具。本教程将从二维旋转出发，逐步推导三维旋转矩阵，并详细介绍欧拉角的定义、旋转顺序、万向锁问题及其在 RoboMaster 工程实践中的应用。</p>
+<hr />
+<h2 id="2">2. 二维平面旋转<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="21">2.1 旋转矩阵推导<a class="headerlink" href="#21" title="Permanent link">&para;</a></h3>
+<p>考虑二维平面中一个向量 <span class="arithmatex">\(\vec{v}\)</span> 绕原点逆时针旋转角度 <span class="arithmatex">\(\theta\)</span>，得到新向量 <span class="arithmatex">\(\vec{v}'\)</span>。设 <span class="arithmatex">\(\vec{v}\)</span> 在原始坐标系下的坐标为 <span class="arithmatex">\((x, y)\)</span>，极坐标形式为：</p>
+<div class="arithmatex">\[
+\begin{aligned}
+x &amp;= r \cos\alpha \\
+y &amp;= r \sin\alpha
+\end{aligned}
+\]</div>
+<p>旋转后，角度变为 <span class="arithmatex">\(\alpha + \theta\)</span>，因此：</p>
+<div class="arithmatex">\[
+\begin{aligned}
+x' &amp;= r\cos(\alpha + \theta) = r(\cos\alpha\cos\theta - \sin\alpha\sin\theta) = x\cos\theta - y\sin\theta \\
+y' &amp;= r\sin(\alpha + \theta) = r(\sin\alpha\cos\theta + \cos\alpha\sin\theta) = x\sin\theta + y\cos\theta
+\end{aligned}
+\]</div>
+<p>写成矩阵形式：</p>
+<div class="arithmatex">\[
+\begin{bmatrix} x' \\ y' \end{bmatrix} = 
+\begin{bmatrix} \cos\theta &amp; -\sin\theta \\ \sin\theta &amp; \cos\theta \end{bmatrix}
+\begin{bmatrix} x \\ y \end{bmatrix}
+\]</div>
+<p>称该矩阵为 <strong>旋转矩阵</strong> <span class="arithmatex">\(R(\theta)\)</span>，它满足正交性 <span class="arithmatex">\(R^{-1}=R^T\)</span> 且 <span class="arithmatex">\(\det(R)=1\)</span>。</p>
+<h3 id="22-vs">2.2 坐标系旋转 vs. 向量旋转<a class="headerlink" href="#22-vs" title="Permanent link">&para;</a></h3>
+<p>旋转矩阵可以有两种理解方式：
+- <strong>主动旋转</strong>：将向量本身旋转 <span class="arithmatex">\(\theta\)</span> 角（如上所述）。
+- <strong>被动旋转</strong>：将坐标系旋转 <span class="arithmatex">\(-\theta\)</span> 角，得到向量在新坐标系下的坐标。</p>
+<p>两种表示互为转置（或逆）。在机器人控制中，通常采用 <strong>被动旋转</strong> 的观点：世界坐标系固定，我们描述机器人在世界坐标系下的朝向，或者将向量在不同坐标系之间转换。本教程后续均采用被动旋转约定。</p>
+<hr />
+<h2 id="3">3. 三维旋转矩阵<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<h3 id="31">3.1 绕基本坐标轴的旋转<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
+<p>三维空间中，旋转矩阵是 <span class="arithmatex">\(3\times 3\)</span> 正交矩阵。绕 <span class="arithmatex">\(x\)</span>、<span class="arithmatex">\(y\)</span>、<span class="arithmatex">\(z\)</span> 轴旋转 <span class="arithmatex">\(\theta\)</span> 角的基本旋转矩阵分别为：</p>
+<div class="arithmatex">\[
+R_x(\theta) = \begin{bmatrix}
+1 &amp; 0 &amp; 0 \\
+0 &amp; \cos\theta &amp; -\sin\theta \\
+0 &amp; \sin\theta &amp; \cos\theta
+\end{bmatrix}
+\]</div>
+<div class="arithmatex">\[
+R_y(\theta) = \begin{bmatrix}
+\cos\theta &amp; 0 &amp; \sin\theta \\
+0 &amp; 1 &amp; 0 \\
+-\sin\theta &amp; 0 &amp; \cos\theta
+\end{bmatrix}
+\]</div>
+<div class="arithmatex">\[
+R_z(\theta) = \begin{bmatrix}
+\cos\theta &amp; -\sin\theta &amp; 0 \\
+\sin\theta &amp; \cos\theta &amp; 0 \\
+0 &amp; 0 &amp; 1
+\end{bmatrix}
+\]</div>
+<p>注意 <span class="arithmatex">\(R_y\)</span> 中符号的位置与 <span class="arithmatex">\(R_x\)</span>、<span class="arithmatex">\(R_z\)</span> 不同，这是由右手定则和坐标轴方向决定的。通常我们采用右手坐标系，绕轴正方向旋转时，从轴的正向看向原点，逆时针旋转为正。</p>
+<h3 id="32">3.2 复合旋转<a class="headerlink" href="#32" title="Permanent link">&para;</a></h3>
+<p>多次旋转的复合可通过旋转矩阵相乘实现。例如，先绕 <span class="arithmatex">\(x\)</span> 轴旋转 <span class="arithmatex">\(\alpha\)</span>，再绕 <span class="arithmatex">\(y\)</span> 轴旋转 <span class="arithmatex">\(\beta\)</span>，最后绕 <span class="arithmatex">\(z\)</span> 轴旋转 <span class="arithmatex">\(\gamma\)</span>，总旋转矩阵为：</p>
+<div class="arithmatex">\[
+R = R_z(\gamma) R_y(\beta) R_x(\alpha)
+\]</div>
+<p>注意：矩阵乘法顺序从右至左对应旋转的顺序（右乘表示在原始坐标系下的连续旋转）。若旋转是相对于当前坐标系（即每次旋转后坐标轴发生变化），则顺序相反。本教程采用 <strong>固定轴</strong> 旋转顺序，即每次旋转相对于固定世界坐标系。</p>
+<hr />
+<h2 id="4">4. 欧拉角<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<h3 id="41">4.1 定义与旋转顺序<a class="headerlink" href="#41" title="Permanent link">&para;</a></h3>
+<p>欧拉角用三个独立的角度来描述刚体在三维空间中的姿态，常见的有 ZYX、ZYZ、XYZ 等顺序。在 RoboMaster 中，常用 <strong>ZYX 欧拉角</strong>（即航向-俯仰-滚转，Yaw-Pitch-Roll）。旋转顺序为：先绕 <span class="arithmatex">\(z\)</span> 轴转 <span class="arithmatex">\(\psi\)</span>（yaw），再绕 <span class="arithmatex">\(y\)</span> 轴转 <span class="arithmatex">\(\theta\)</span>（pitch），最后绕 <span class="arithmatex">\(x\)</span> 轴转 <span class="arithmatex">\(\phi\)</span>（roll）。对应的旋转矩阵为：</p>
+<div class="arithmatex">\[
+R_{\text{ZYX}}(\phi, \theta, \psi) = R_x(\phi) R_y(\theta) R_z(\psi)
+\]</div>
+<p>展开后得到：</p>
+<div class="arithmatex">\[
+R_{\text{ZYX}} =
+\begin{bmatrix}
+c\theta c\psi &amp; c\theta s\psi &amp; -s\theta \\
+s\phi s\theta c\psi - c\phi s\psi &amp; s\phi s\theta s\psi + c\phi c\psi &amp; s\phi c\theta \\
+c\phi s\theta c\psi + s\phi s\psi &amp; c\phi s\theta s\psi - s\phi c\psi &amp; c\phi c\theta
+\end{bmatrix}
+\]</div>
+<p>其中 <span class="arithmatex">\(c = \cos\)</span>，<span class="arithmatex">\(s = \sin\)</span>。</p>
+<h3 id="42">4.2 从旋转矩阵到欧拉角<a class="headerlink" href="#42" title="Permanent link">&para;</a></h3>
+<p>已知旋转矩阵 <span class="arithmatex">\(R = [r_{ij}]\)</span>，可由其元素反解欧拉角：</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\theta &amp;= \arcsin(-r_{13}) \\
+\phi &amp;= \operatorname{atan2}(r_{23}, r_{33}) \\
+\psi &amp;= \operatorname{atan2}(r_{12}, r_{11})
+\end{aligned}
+\]</div>
+<p>注意当 <span class="arithmatex">\(\theta = \pm 90^\circ\)</span> 时会出现奇异（万向锁），此时 <span class="arithmatex">\(\phi\)</span> 和 <span class="arithmatex">\(\psi\)</span> 无法唯一确定。在工程中，通常通过选择不同旋转顺序（如 ZYZ）来避免奇异，或者使用四元数。</p>
+<h3 id="43">4.3 万向锁<a class="headerlink" href="#43" title="Permanent link">&para;</a></h3>
+<p>当 pitch 角 <span class="arithmatex">\(\theta = \pm 90^\circ\)</span> 时，yaw 和 roll 轴重合，导致一个自由度丢失。这是因为旋转矩阵退化为：</p>
+<div class="arithmatex">\[
+R_{\text{ZYX}}(\phi, \pm 90^\circ, \psi) = 
+\begin{bmatrix}
+0 &amp; 0 &amp; \mp 1 \\
+\sin(\phi \pm \psi) &amp; \cos(\phi \pm \psi) &amp; 0 \\
+\cos(\phi \pm \psi) &amp; -\sin(\phi \pm \psi) &amp; 0
+\end{bmatrix}
+\]</div>
+<p>此时只能确定 <span class="arithmatex">\(\phi \pm \psi\)</span> 的和或差，而无法单独确定 <span class="arithmatex">\(\phi\)</span> 和 <span class="arithmatex">\(\psi\)</span>。在云台控制中，若要求 pitch 接近 <span class="arithmatex">\(90^\circ\)</span>（如枪口指天），则需改用四元数或避免该工况。</p>
+<hr />
+<h2 id="5">5. 坐标变换在机器人控制中的应用<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<h3 id="51">5.1 云台坐标系与底盘坐标系的转换<a class="headerlink" href="#51" title="Permanent link">&para;</a></h3>
+<p>在 RoboMaster 中，云台坐标系（枪口指向）与世界坐标系之间的转换通常由云台电机和 IMU 共同完成。而底盘坐标系（车头方向）相对于世界坐标系的旋转由底盘旋转角 <span class="arithmatex">\(\theta_c\)</span> 决定。</p>
+<p>设遥控器指令 <span class="arithmatex">\(v_{\text{cmd}}\)</span> 定义在云台坐标系下（推杆向前即朝枪口方向），则首先将其转换到世界坐标系：</p>
+<div class="arithmatex">\[
+\vec{v}_w = R_z(\theta_g) \, \vec{v}_{\text{cmd}}
+\]</div>
+<p>其中 <span class="arithmatex">\(\theta_g\)</span> 为云台 yaw 角。再将其转换到底盘坐标系（用于电机运动学）：</p>
+<div class="arithmatex">\[
+\vec{v}_c = R_z^T(\theta_c) \, \vec{v}_w = R_z(-\theta_c) \, \vec{v}_w
+\]</div>
+<p>合并得：</p>
+<div class="arithmatex">\[
+\vec{v}_c = R_z(-\theta_c) R_z(\theta_g) \, \vec{v}_{\text{cmd}} = R_z(\theta_g - \theta_c) \, \vec{v}_{\text{cmd}}
+\]</div>
+<p>即底盘系下速度 = 云台系速度旋转 <span class="arithmatex">\((\theta_g - \theta_c)\)</span> 角度，这正是我们之前教程中得到的结论。</p>
+<h3 id="52-imu">5.2 IMU 数据与欧拉角<a class="headerlink" href="#52-imu" title="Permanent link">&para;</a></h3>
+<p>IMU 通常输出以欧拉角表示的姿态（经过滤波融合）。在代码中，我们直接使用 IMU 提供的 yaw、pitch、roll 角进行控制。需要注意的是，IMU 内部使用的旋转顺序应与控制系统一致（通常也是 ZYX）。</p>
+<h3 id="53">5.3 旋转矩阵的几何意义<a class="headerlink" href="#53" title="Permanent link">&para;</a></h3>
+<p>旋转矩阵的每一列表示旋转后的坐标轴在原坐标系中的方向。例如，若 <span class="arithmatex">\(R = [\mathbf{u} \ \mathbf{v} \ \mathbf{w}]\)</span>，则 <span class="arithmatex">\(\mathbf{u}\)</span>、<span class="arithmatex">\(\mathbf{v}\)</span>、<span class="arithmatex">\(\mathbf{w}\)</span> 分别是旋转后新的 <span class="arithmatex">\(x'\)</span>、<span class="arithmatex">\(y'\)</span>、<span class="arithmatex">\(z'\)</span> 轴在世界坐标系中的单位向量。这一性质可用于将局部速度转换为全局速度。</p>
+<h2 id="6">6. 总结<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
+<ul>
+<li>旋转矩阵是描述坐标变换的标准工具，满足正交性。</li>
+<li>欧拉角用三个角度直观表示姿态，但存在万向锁问题。</li>
+<li>在 RoboMaster 控制中，常用 ZYX 欧拉角，并利用旋转矩阵进行云台、底盘之间的速度变换。</li>
+<li>理解旋转矩阵的几何意义有助于正确推导坐标变换公式。</li>
+</ul>
 
 
 
@@ -1132,7 +1422,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="2025年6月7日 19:41:07 CST">2025年6月7日 19:41:07</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="2026年3月22日 23:12:55 CST">2026年3月22日 23:12:55</span>
   </span>
 
     
@@ -1142,7 +1432,7 @@
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="2025年6月7日 19:41:07 CST">2025年6月7日 19:41:07</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="2026年3月22日 23:12:55 CST">2026年3月22日 23:12:55</span>
   </span>
 
     
@@ -1171,7 +1461,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../install/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 安装">
+          <a href="../shoot/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 发射和热量控制">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1181,20 +1471,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                安装
+                发射和热量控制
               </div>
             </div>
           </a>
         
         
           
-          <a href="../git_commit/" class="md-footer__link md-footer__link--next" aria-label="Next: 提交">
+          <a href="../kalman/" class="md-footer__link md-footer__link--next" aria-label="Next: 卡尔曼滤波">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                提交
+                卡尔曼滤波
               </div>
             </div>
             <div class="md-footer__button md-icon">

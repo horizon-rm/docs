@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../install/">
+        <link rel="prev" href="../gimbal/">
       
       
-        <link rel="next" href="../git_commit/">
+        <link rel="next" href="../rotate_matrix/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>配置 - Horizon 战队电控组博客</title>
+        <title>发射和热量控制 - Horizon 战队电控组博客</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#vscode-keil-stm32" class="md-skip">
+        <a href="#robomaster" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              配置
+              发射和热量控制
             
           </span>
         </div>
@@ -237,13 +237,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../install/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../env/install/" class="md-tabs__link">
           
   
   
@@ -261,11 +259,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../algorithm/kinematic/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../kinematic/" class="md-tabs__link">
           
   
   
@@ -399,10 +399,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -416,22 +414,19 @@
     
     
       
-        
-        
-      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
@@ -444,7 +439,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             环境
@@ -458,7 +453,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../install/" class="md-nav__link">
+      <a href="../../env/install/" class="md-nav__link">
         
   
   
@@ -478,30 +473,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    配置
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../env/config/" class="md-nav__link">
         
   
   
@@ -512,33 +487,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#vscode-keil-stm32" class="md-nav__link">
-    <span class="md-ellipsis">
-      vscode + keil + stm32 开发
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -565,20 +513,17 @@
       
       
         
-          
-          
-        
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
         
           
-          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
             
   
   
@@ -605,7 +550,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../git_commit/" class="md-nav__link">
+      <a href="../../env/git_commit/" class="md-nav__link">
         
   
   
@@ -628,7 +573,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../git_merge_main/" class="md-nav__link">
+      <a href="../../env/git_merge_main/" class="md-nav__link">
         
   
   
@@ -651,7 +596,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../git_pr_fix/" class="md-nav__link">
+      <a href="../../env/git_pr_fix/" class="md-nav__link">
         
   
   
@@ -686,8 +631,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -707,19 +654,22 @@
     
     
       
+        
+        
+      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -732,7 +682,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             培训内容
@@ -746,7 +696,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../algorithm/kinematic/" class="md-nav__link">
+      <a href="../kinematic/" class="md-nav__link">
         
   
   
@@ -769,7 +719,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../algorithm/chassis_ex/" class="md-nav__link">
+      <a href="../chassis_ex/" class="md-nav__link">
         
   
   
@@ -792,7 +742,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../algorithm/gimbal/" class="md-nav__link">
+      <a href="../gimbal/" class="md-nav__link">
         
   
   
@@ -812,10 +762,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../algorithm/shoot/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    发射和热量控制
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -826,6 +798,143 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 引言
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 摩擦轮速度控制
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 单发与连发逻辑
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 单发与连发逻辑">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 状态机模型
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 热量控制
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 热量控制">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 热力学模型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 离散化与实时控制
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 冷却时间常数
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-matlab" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. MATLAB 拟合函数：从实验到数学模型
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. MATLAB 拟合函数：从实验到数学模型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 拟合的必要性
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.2 多项式拟合
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -838,7 +947,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../algorithm/rotate_matrix/" class="md-nav__link">
+      <a href="../rotate_matrix/" class="md-nav__link">
         
   
   
@@ -875,17 +984,20 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
         
           
-          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="">
             
   
   
@@ -912,7 +1024,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../algorithm/kalman/" class="md-nav__link">
+      <a href="../kalman/" class="md-nav__link">
         
   
   
@@ -935,7 +1047,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../algorithm/complementary/" class="md-nav__link">
+      <a href="../complementary/" class="md-nav__link">
         
   
   
@@ -958,7 +1070,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../algorithm/lowpass/" class="md-nav__link">
+      <a href="../lowpass/" class="md-nav__link">
         
   
   
@@ -1107,9 +1219,73 @@
   
 
 
-  <h1>配置</h1>
-
-<h2 id="vscode-keil-stm32">vscode + keil + stm32 开发<a class="headerlink" href="#vscode-keil-stm32" title="Permanent link">&para;</a></h2>
+<h1 id="robomaster">RoboMaster 电控进阶培训：发射系统设计与控制<a class="headerlink" href="#robomaster" title="Permanent link">&para;</a></h1>
+<h2 id="1">1. 引言<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<p>发射系统是机器人的核心攻击部件，其性能直接影响比赛表现。本教程将围绕<strong>摩擦轮速度控制</strong>、<strong>拨弹时序逻辑</strong>、<strong>裁判系统热量限制</strong>以及<strong>基于实验数据的模型拟合</strong>四个核心主题，着重从物理原理和数学建模的角度进行阐述，帮助学员构建一套理论扎实、工程可靠的发射控制系统。</p>
+<hr />
+<h2 id="2">2. 摩擦轮速度控制<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h2 id="3">3. 单发与连发逻辑<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<h3 id="31">3.1 状态机模型<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
+<p>发射控制系统通常采用有限状态机（FSM）来管理不同工况。状态转移图可由以下数学描述：</p>
+<div class="arithmatex">\[
+\mathcal{S} = \{ \text{IDLE}, \text{SINGLE}, \text{BURST} \}
+\]</div>
+<p>转移条件：
+- 从 IDLE 到 SINGLE：单发指令上升沿 &amp; 热量足够 &amp; 有弹
+- 从 IDLE 到 BURST：连发指令 &amp; 热量足够 &amp; 有弹
+- 从 BURST 到 IDLE：停止指令 或 热量超限 或 无弹
+- 从 SINGLE 到 IDLE：单发动作完成</p>
+<h2 id="4">4. 热量控制<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<h3 id="41">4.1 热力学模型<a class="headerlink" href="#41" title="Permanent link">&para;</a></h3>
+<p>裁判系统规定：每次发射消耗固定热量 <span class="arithmatex">\(Q_{\text{shot}}\)</span>（单位 J），同时枪口具有自然冷却功率 <span class="arithmatex">\(P_{\text{cool}}\)</span>（W）。设当前热量为 <span class="arithmatex">\(H(t)\)</span>，热量上限为 <span class="arithmatex">\(H_{\text{max}}\)</span>，则热量动态满足微分方程：</p>
+<div class="arithmatex">\[
+\frac{dH}{dt} = Q_{\text{shot}} \cdot \delta(t) - P_{\text{cool}}
+\]</div>
+<p>其中 <span class="arithmatex">\(\delta(t)\)</span> 为发射脉冲序列。在连续发射频率 <span class="arithmatex">\(f\)</span> 下，平均热量变化率为：</p>
+<div class="arithmatex">\[
+\frac{dH}{dt} = f \cdot Q_{\text{shot}} - P_{\text{cool}}
+\]</div>
+<p>稳态时要求 <span class="arithmatex">\(\frac{dH}{dt} = 0\)</span>，可得最大允许频率：</p>
+<div class="arithmatex">\[
+f_{\text{max}} = \frac{P_{\text{cool}}}{Q_{\text{shot}}}
+\]</div>
+<p>若 <span class="arithmatex">\(f &gt; f_{\text{max}}\)</span>，热量将线性增长直至超限。</p>
+<h3 id="42">4.2 离散化与实时控制<a class="headerlink" href="#42" title="Permanent link">&para;</a></h3>
+<p>裁判系统以周期 <span class="arithmatex">\(T_{\text{ref}}\)</span>（通常 10ms）发送当前热量值 <span class="arithmatex">\(H[k]\)</span>。电控需据此判断剩余热量：</p>
+<div class="arithmatex">\[
+H_{\text{remain}}[k] = H_{\text{max}} - H[k]
+\]</div>
+<p>连发时，为保证不超限，应使发射频率满足：</p>
+<div class="arithmatex">\[
+f \le \frac{H_{\text{remain}}[k]}{Q_{\text{shot}} \cdot \tau_{\text{window}}}
+\]</div>
+<p>其中 <span class="arithmatex">\(\tau_{\text{window}}\)</span> 为预测时间窗口，可取为一次热量更新周期或一个固定时间（如 1s）。更精细的控制可采用<strong>热量预测</strong>：假设未来 <span class="arithmatex">\(N\)</span> 次发射将发生，则需确保：</p>
+<div class="arithmatex">\[
+H[k] + N \cdot Q_{\text{shot}} \le H_{\text{max}}
+\]</div>
+<p>从而限制单次连发数量。</p>
+<h3 id="43">4.3 冷却时间常数<a class="headerlink" href="#43" title="Permanent link">&para;</a></h3>
+<p>自然冷却过程通常符合指数衰减规律：</p>
+<div class="arithmatex">\[
+H(t) = H_0 e^{-t/\tau} + H_{\infty}
+\]</div>
+<p>其中 <span class="arithmatex">\(\tau\)</span> 为时间常数，<span class="arithmatex">\(H_{\infty}\)</span> 为环境平衡热量（通常为 0）。通过实验数据拟合可得到 <span class="arithmatex">\(\tau\)</span>，用于离线计算冷却效果，提高控制精度。</p>
+<h2 id="5-matlab">5. MATLAB 拟合函数：从实验到数学模型<a class="headerlink" href="#5-matlab" title="Permanent link">&para;</a></h2>
+<h3 id="51">5.1 拟合的必要性<a class="headerlink" href="#51" title="Permanent link">&para;</a></h3>
+<p>许多控制参数（如转速与出膛速度的关系、热量与冷却时间的关系）难以从理论精确推导，需要通过实验采集数据点，再利用数学拟合得到连续函数。拟合的本质是在给定数据点 <span class="arithmatex">\((x_i, y_i)\)</span> 上寻找一个函数 <span class="arithmatex">\(f(x)\)</span>，使误差平方和最小：</p>
+<div class="arithmatex">\[
+\min \sum_{i=1}^{n} \left[ y_i - f(x_i) \right]^2
+\]</div>
+<h3 id="52">5.2 多项式拟合<a class="headerlink" href="#52" title="Permanent link">&para;</a></h3>
+<p>假设出膛速度 <span class="arithmatex">\(v\)</span> 与摩擦轮转速 <span class="arithmatex">\(\omega\)</span> 满足二次关系：</p>
+<div class="arithmatex">\[
+v = a \omega^2 + b \omega + c
+\]</div>
+<p>利用最小二乘法求解系数 <span class="arithmatex">\(a,b,c\)</span>。在 MATLAB 中，<code>polyfit</code> 函数通过求解正规方程实现：</p>
+<div class="arithmatex">\[
+\mathbf{\Phi}^T \mathbf{\Phi} \mathbf{p} = \mathbf{\Phi}^T \mathbf{y}
+\]</div>
+<p>其中 <span class="arithmatex">\(\mathbf{\Phi}\)</span> 为设计矩阵（由 <span class="arithmatex">\(\omega_i^2, \omega_i, 1\)</span> 构成），<span class="arithmatex">\(\mathbf{p} = [a,b,c]^T\)</span>，<span class="arithmatex">\(\mathbf{y}\)</span> 为速度向量。</p>
 
 
 
@@ -1132,7 +1308,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="2025年6月7日 19:41:07 CST">2025年6月7日 19:41:07</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="2026年3月22日 23:12:55 CST">2026年3月22日 23:12:55</span>
   </span>
 
     
@@ -1142,7 +1318,7 @@
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="2025年6月7日 19:41:07 CST">2025年6月7日 19:41:07</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="2026年3月22日 23:12:55 CST">2026年3月22日 23:12:55</span>
   </span>
 
     
@@ -1171,7 +1347,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../install/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 安装">
+          <a href="../gimbal/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 云台">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1181,20 +1357,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                安装
+                云台
               </div>
             </div>
           </a>
         
         
           
-          <a href="../git_commit/" class="md-footer__link md-footer__link--next" aria-label="Next: 提交">
+          <a href="../rotate_matrix/" class="md-footer__link md-footer__link--next" aria-label="Next: 欧拉角和旋转矩阵">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                提交
+                欧拉角和旋转矩阵
               </div>
             </div>
             <div class="md-footer__button md-icon">
